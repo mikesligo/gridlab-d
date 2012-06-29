@@ -1,0 +1,5 @@
+dsyr2.lo: dsyr2.c f2c.h slu_Cnames.h
+
+f2c.h:
+
+slu_Cnames.h:

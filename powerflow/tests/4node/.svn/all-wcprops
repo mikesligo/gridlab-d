@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node
+END
+unbalanced_stepdown_D-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/unbalanced_stepdown_D-grY.glm
+END
+unbalanced_stepdown_D-D.glm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/unbalanced_stepdown_D-D.glm
+END
+balanced_stepup_grY-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/balanced_stepup_grY-grY.glm
+END
+balanced_stepup_D-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/balanced_stepup_D-grY.glm
+END
+unbalanced_stepup_grY-grY-Gen8.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/unbalanced_stepup_grY-grY-Gen8.glm
+END
+balanced_stepdown_grY-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/balanced_stepdown_grY-grY.glm
+END
+unbalanced_stepup_grY-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/unbalanced_stepup_grY-grY.glm
+END
+balanced_stepup_D-D.glm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/balanced_stepup_D-D.glm
+END
+balanced_stepdown_D-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/balanced_stepdown_D-grY.glm
+END
+unbalanced_stepup_D-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/unbalanced_stepup_D-grY.glm
+END
+unbalanced_stepdown_grY-grY.glm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/unbalanced_stepdown_grY-grY.glm
+END
+balanced_stepdown_D-D.glm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/balanced_stepdown_D-D.glm
+END
+unbalanced_stepup_D-D.glm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/4node/unbalanced_stepup_D-D.glm
+END

@@ -1,0 +1,207 @@
+clock {
+     timezone PST+8PDT;
+     starttime '2000-01-01 00:00:00';
+     stoptime '2000-06-02 00:00:00';
+     //stoptime '2000-01-01 00:10:00';
+}
+
+#include "HVAC_schedule.glm";
+#include "water_schedule.glm";
+#include "appliance_schedule.glm";
+#define stylesheet=http://gridlab-d.svn.sourceforge.net/viewvc/gridlab-d/trunk/core/gridlabd-2_0
+#set minimum_timestep=60;
+#set profiler=1;
+#set relax_naming_rules=1;
+
+
+module tape;
+module climate;
+module residential {
+     implicit_enduses NONE;
+};
+module powerflow {
+     solver_method FBS;
+     NR_iteration_limit 50;
+};
+
+//module plc {
+//	incpath "..\rt";
+//	libpath "..\lib";
+//};
+
+
+object climate {
+     name "Seattle WA";
+     tmyfile "WA-Seattle.tmy2";
+     interpolate QUADRATIC;
+};
+
+//Configurations
+
+object triplex_line_configuration {
+      name trip_line_config;
+      conductor_1 object triplex_line_conductor {
+            resistance 0.97;
+            geometric_mean_radius 0.01111;
+            };
+      conductor_2 object triplex_line_conductor {
+            resistance 0.97;
+            geometric_mean_radius 0.01111;
+            };
+      conductor_N object triplex_line_conductor {
+            resistance 0.97;
+            geometric_mean_radius 0.01111;
+            };
+      insulation_thickness 0.08;
+      diameter 0.368;
+}
+
+object transformer_configuration {    
+      name 1515A;     
+      connect_type SINGLE_PHASE_CENTER_TAPPED;     
+      install_type POLETOP;     
+      primary_voltage 4160.0V;     
+      secondary_voltage 120.0V;     
+      power_rating 500;     
+      impedance 0.006000+0.013600j;     
+      impedance1 0.012000+0.006800j;     
+      impedance2 0.012000+0.006800j;     
+      shunt_impedance 1728000+691200j;     
+}  
+
+
+
+object node {     
+      name 650;     
+      phases ABCN;    
+      bustype SWING;	  
+      voltage_A 2401.7771;     
+      voltage_B -1200.8886-2080.000j;     
+      voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2401.7771;     
+} 
+
+
+object transformer {
+       name T1;
+       phases AS;
+       from 650;
+       to tn_1;
+       configuration object transformer_configuration {
+            connect_type SINGLE_PHASE_CENTER_TAPPED;
+            install_type POLETOP;
+            shunt_impedance 10000+10000j;
+            primary_voltage 2401.777;
+            secondary_voltage 120;
+            powerA_rating 110 kVA;
+            impedance 0.00033+0.0022j;
+       };
+       groupid Distribution_Trans;
+}
+
+
+object triplex_node {
+       name tn_1;
+       phases AS;
+       nominal_voltage 120;
+}
+
+
+object triplex_line {
+       name tl_1;
+       phases AS;
+       from tn_1;
+       to tm_1;
+       length 100;
+       configuration trip_line_config;
+}
+
+
+
+object triplex_meter {
+       name tm_1;
+       phases AS;
+       nominal_voltage 120;
+}
+
+object house {
+     parent tm_1;
+     name house1;
+     schedule_skew -810; 
+     air_temperature 57; 
+     floor_area 1838;
+     cooling_setpoint coolingoff*1;
+     heating_setpoint heatingoff*1;
+     thermal_integrity_level 5;
+     motor_model BASIC;
+     motor_efficiency GOOD;
+    // air_temperature 70;
+     mass_temperature 70;
+     heating_system_type HEAT_PUMP;
+     heating_COP 3.1;
+     auxiliary_strategy LOCKOUT;
+     auxiliary_system_type ELECTRIC;
+     aux_heat_temperature_lockout 2.270706e+001;
+     cooling_system_type ELECTRIC;
+     cooling_COP 3.2;
+
+	object waterheater {
+	  name waterheater1;
+          tank_volume 50;
+          heating_element_capacity 2.8 kW;
+          tank_setpoint 136.8;
+          temperature 135;
+          thermostat_deadband 2.9;
+          location INSIDE;
+          tank_UA 2.4;
+          schedule_skew -810;
+	  //demand water1*1; 
+          demand water14*1;
+
+		
+     	};
+
+	//object refrigerator {
+		//name refrigerator1;	
+		//size 10; // cf
+		//setpoint 35; // degF
+		// deadband 3; //degF
+	//};
+	
+	
+	
+}
+
+//object plc{
+//	name waterheater1control;
+//	source control.plc;
+//	parent waterheater1;
+//};
+
+
+object multi_recorder {
+     parent tm_1;
+     file V_tm_1.csv;
+     interval 60;
+     limit 1000000;
+     property measured_real_power,waterheater1:temperature,waterheater1:demand,waterheater1:height,house1:air_temperature, measured_reactive_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;	
+     //property measured_real_power,refrigerator1:temperature,house1:air_temperature, measured_reactive_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+	
+     //property voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+	parent house1;
+	file house1.csv;
+	interval 60;
+	limit 1000000;
+	property air_temperature;
+};
+
+//object recorder {
+	//parent refrigerator1;
+	//file refrigerator1.csv;
+	//interval 60;
+	//limit 1000000;
+	//property temperature;
+//};

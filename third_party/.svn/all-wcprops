@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/third_party
+END
+jvm.lib
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/third_party/jvm.lib
+END
+install_xercesc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/third_party/install_xercesc
+END
+cppunit-1.12.0.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/third_party/cppunit-1.12.0.tar.gz
+END
+superlu_3.1.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/third_party/superlu_3.1.tar.gz
+END
+install_cppunit
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/third_party/install_cppunit
+END
+xerces-c-src_2_8_0.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/third_party/xerces-c-src_2_8_0.tar.gz
+END

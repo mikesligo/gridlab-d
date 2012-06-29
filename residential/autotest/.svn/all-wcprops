@@ -1,0 +1,695 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2547/branch/2.2/residential/autotest
+END
+test_lights_implicit_power1.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_implicit_power1.glm
+END
+test_microwave_energy.player
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_energy.player
+END
+test_microwave_energy.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_energy.m
+END
+test_lights_implicit_power2.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_implicit_power2.glm
+END
+test_lights_implicit_power3.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_implicit_power3.glm
+END
+test_lights_implicit_power4.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_implicit_power4.glm
+END
+test_clotheswasher_explicit_energy_swd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_clotheswasher_explicit_energy_swd_opt.glm
+END
+test_microwave_energy_accumulation.player
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_energy_accumulation.player
+END
+test_HVAC_balance.glm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_HVAC_balance.glm
+END
+test_microwave_energy_accumulation.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_energy_accumulation.m
+END
+test_clotheswasher_explicit_energy_wwd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_clotheswasher_explicit_energy_wwd_opt.glm
+END
+test_plugload_enduse_load_swy.player
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_enduse_load_swy.player
+END
+plugload_energy_meter.player
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/plugload_energy_meter.player
+END
+test_range_power_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_range_power_opt.glm
+END
+test_microwave_internal_gains_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_internal_gains_opt.glm
+END
+test_plugload_enduse_load_wwy.player
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_enduse_load_wwy.player
+END
+test_occupantload_enduse_load0.glm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_occupantload_enduse_load0.glm
+END
+test_lights_standalone.glm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_standalone.glm
+END
+plugload_internal_gains.player
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/plugload_internal_gains.player
+END
+test_plugload_enduse_load_swd.player
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_enduse_load_swd.player
+END
+test_waterheater_implicit.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_waterheater_implicit.glm
+END
+test_lights_exp.glm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_exp.glm
+END
+test_lights_explicit_power2.player
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power2.player
+END
+test_plugload_internal_gains_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_internal_gains_opt.glm
+END
+test_thermal_storage_energy.player
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2334/branch/2.2/residential/autotest/test_thermal_storage_energy.player
+END
+test_plugload_enduse_load.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_enduse_load.glm
+END
+test_range_explicit_energy1_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_range_explicit_energy1_opt.glm
+END
+test_clotheswasher_explicit_energy_swy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_clotheswasher_explicit_energy_swy_opt.glm
+END
+test_range_explicit_energy2_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_range_explicit_energy2_opt.glm
+END
+test_range_explicit_energy3_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_range_explicit_energy3_opt.glm
+END
+test_range_explicit_energy4_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_range_explicit_energy4_opt.glm
+END
+test_clotheswasher_explicit_energy_wwy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_clotheswasher_explicit_energy_wwy_opt.glm
+END
+lights_power.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/lights_power.m
+END
+test_refrigerator_implicit.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_refrigerator_implicit.glm
+END
+plugload_enduse_load.player
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/plugload_enduse_load.player
+END
+test_zipload_pow_en_hg.glm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_zipload_pow_en_hg.glm
+END
+test_microwave_explicit_swd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_explicit_swd_opt.glm
+END
+generic_demand.glt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/generic_demand.glt
+END
+test_lights_imp.glm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_imp.glm
+END
+test_microwave_explicit_wwd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_explicit_wwd_opt.glm
+END
+test_plugload_implicit_swd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_implicit_swd_opt.glm
+END
+test_plugload_internal_gains_hf.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_internal_gains_hf.glm
+END
+test_plugload_implicit_wwd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_implicit_wwd_opt.glm
+END
+test_HVAC_common_cool.glm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_HVAC_common_cool.glm
+END
+test_lights_explicit_power1.player
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power1.player
+END
+test_residential_exercise_5_2_1.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_residential_exercise_5_2_1.glm
+END
+test_microwave_explicit_swy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_explicit_swy_opt.glm
+END
+test_dishwasher_explicit_power1_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dishwasher_explicit_power1_opt.glm
+END
+waterheater_demand_waveform_sawtooth2.player
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/waterheater_demand_waveform_sawtooth2.player
+END
+test_dishwasher_explicit_power2_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dishwasher_explicit_power2_opt.glm
+END
+plugload_demand_range_bounds.player
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/plugload_demand_range_bounds.player
+END
+test_plugload_implicit_swy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_implicit_swy_opt.glm
+END
+test_microwave_explicit_wwy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_explicit_wwy_opt.glm
+END
+test_range_power.player
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_range_power.player
+END
+waterheater_demand_waveform_sine.player
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/waterheater_demand_waveform_sine.player
+END
+test_plugload_heatgain_swy.player
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_heatgain_swy.player
+END
+Olympia.tmy2
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/Olympia.tmy2
+END
+test_plugload_demand_range_bounds_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_demand_range_bounds_opt.glm
+END
+waterheater_demand_waveform_square.player
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/waterheater_demand_waveform_square.player
+END
+test_plugload_implicit_wwy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_implicit_wwy_opt.glm
+END
+test_HVAC_common_heat.glm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_HVAC_common_heat.glm
+END
+test_plugload_heatgain_wwy.player
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_heatgain_wwy.player
+END
+test_dishwasher_implicit.glm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dishwasher_implicit.glm
+END
+WA-Yakima.tmy2
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/WA-Yakima.tmy2
+END
+test_HVAC_peak_cool.glm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_HVAC_peak_cool.glm
+END
+test_dryer_explicit_energy_swd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dryer_explicit_energy_swd_opt.glm
+END
+test_plugload_energy_meter_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_energy_meter_opt.glm
+END
+test_generic_limit_demand.player
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_generic_limit_demand.player
+END
+test_microwave_standby_power_limits_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_standby_power_limits_opt.glm
+END
+test_plugload_heatgain_swd.player
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_heatgain_swd.player
+END
+test_dryer_explicit_energy_wwd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dryer_explicit_energy_wwd_opt.glm
+END
+test_solargains.glm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_solargains.glm
+END
+generic_fail_demand(range0-1).glt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/generic_fail_demand(range0-1).glt
+END
+test_microwave_cycle_length_limits_err.glm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_cycle_length_limits_err.glm
+END
+test_generic_limit_demand(range0-1).glt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_generic_limit_demand(range0-1).glt
+END
+test_plugload_heatgain_wwd.player
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_heatgain_wwd.player
+END
+test_microwave_internal_gains_1.player
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_internal_gains_1.player
+END
+test_microwave_demand_limits_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_demand_limits_opt.glm
+END
+test_lights_explicit_power4.player
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power4.player
+END
+test_microwave_energy_accumulation.glm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_energy_accumulation.glm
+END
+test_microwave_energy.glt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_energy.glt
+END
+test_freezer_implicit_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_freezer_implicit_opt.glm
+END
+waterheater_demand_waveform_sawtooth1.player
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/waterheater_demand_waveform_sawtooth1.player
+END
+test_HVAC_peak_heat.glm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_HVAC_peak_heat.glm
+END
+test_dryer_explicit_energy_swy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dryer_explicit_energy_swy_opt.glm
+END
+test_plugload_explicit_swd.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_explicit_swd.glm
+END
+test_microwave_implicit_swd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_implicit_swd_opt.glm
+END
+test_microwave_implicit.glm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_implicit.glm
+END
+test_freezer_deadband_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_freezer_deadband_opt.glm
+END
+test_dryer_explicit_energy_wwy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dryer_explicit_energy_wwy_opt.glm
+END
+test_microwave_energy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_energy_opt.glm
+END
+test_lights_explicit_power1.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power1.glm
+END
+test_microwave_implicit_wwd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_implicit_wwd_opt.glm
+END
+test_lights_explicit_power2.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power2.glm
+END
+test_microwave_standby_power_limits.player
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_standby_power_limits.player
+END
+test_lights_explicit_power3.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power3.glm
+END
+test_lights_explicit_power4.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power4.glm
+END
+test_plugload_energy_swy.player
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_energy_swy.player
+END
+test_thermal_storage_SOC.player
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2334/branch/2.2/residential/autotest/test_thermal_storage_SOC.player
+END
+test_plugload_energy_wwy.player
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_energy_wwy.player
+END
+test_microwave_internal_gains_0.player
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_internal_gains_0.player
+END
+test_clotheswasher_implicit.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_clotheswasher_implicit.glm
+END
+test_lights_explicit_power3.player
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_lights_explicit_power3.player
+END
+test_range_implicit_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_range_implicit_opt.glm
+END
+test_thermal_storage_autotest.glm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2547/branch/2.2/residential/autotest/test_thermal_storage_autotest.glm
+END
+test_plugload_explicit_swy.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_explicit_swy.glm
+END
+test_microwave_implicit_swy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_implicit_swy_opt.glm
+END
+test_plugload_energy_swd.player
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_energy_swd.player
+END
+test_plugload_explicit_wwd_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_explicit_wwd_opt.glm
+END
+test_plugload_explicit_wwy.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_explicit_wwy.glm
+END
+test_microwave_implicit_wwy_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_microwave_implicit_wwy_opt.glm
+END
+test_plugload_energy_wwd.player
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_plugload_energy_wwd.player
+END
+plugload_internal_gains_hf.player
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/plugload_internal_gains_hf.player
+END
+test_dryer_implicit.glm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_dryer_implicit.glm
+END
+test_residentialenduse_standalone.glm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/autotest/test_residentialenduse_standalone.glm
+END

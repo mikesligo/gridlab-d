@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt
+END
+gnuplot.conf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/gnuplot.conf
+END
+gridlabd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/gridlabd.conf
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/favicon.ico
+END
+gridlabd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/gridlabd.h
+END
+gridlabd.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/gridlabd.css
+END
+gridlabd.syn
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/gridlabd.syn
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/LICENSE
+END
+STATUS
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/STATUS
+END
+gridlabd.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/gridlabd.js
+END
+mingw.conf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/mingw.conf
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/COPYRIGHT
+END
+debugger.conf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/debugger.conf
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/rt/Makefile.am
+END

@@ -1,0 +1,10 @@
+#!/bin/bash
+set -o igncr
+# obtain rev number to release
+#BUILD=`echo $(svn -R info "." | grep Revision | cut -f2 -d: | /usr/bin/sort -ur | head -n 1)`
+BUILD=`echo $(svn -R info "." | grep Revision | head -n 1 | cut -f2 -d" ")`
+#echo $BUILD
+#BUILD=`expr 1228 + $BUILD `
+BUILD=`python -c 'print 1228 + '$BUILD`
+#echo $BUILD
+echo BUILD=$BUILD > REV

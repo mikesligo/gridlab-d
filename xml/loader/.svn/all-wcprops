@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/xml/loader
+END
+Xerces_loader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/xml/loader/Xerces_loader.cpp
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/xml/loader/LICENSE
+END
+STATUS
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/xml/loader/STATUS
+END
+core.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/xml/loader/core.xsd
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/xml/loader/COPYRIGHT
+END
+core.xsx
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/xml/loader/core.xsx
+END

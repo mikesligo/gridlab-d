@@ -1,0 +1,5 @@
+drot.lo: drot.c f2c.h slu_Cnames.h
+
+f2c.h:
+
+slu_Cnames.h:

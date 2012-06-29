@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/build.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/.classpath
+END
+GLDebug.iap_xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/GLDebug.iap_xml
+END
+runGLDebug.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/runGLDebug.bat
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/.project
+END

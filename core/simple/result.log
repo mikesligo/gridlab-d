@@ -1,0 +1,29 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+Core profiler results
+======================
+
+Total objects                 16 objects
+Parallelism                    1 thread
+Total time                  86.0 seconds
+  Core time                 86.0 seconds (100.0%)
+  Model time                 0.0 seconds/thread (0.0%)
+Simulation time             4546 days
+Simulation speed             20k object.hours/second
+Syncs completed               86 passes
+Time steps completed          84 timesteps
+Convergence efficiency      1.02 passes/timestep
+Memory lock contention      0.0%
+Average timestep        4676162 seconds/timestep
+Simulation rate         4567414 x realtime
+
+
+Model profiler results
+======================
+
+Class            Time (s) Time (%) msec/obj
+---------------- -------- -------- --------
+node               0.010     50.0%     10.0
+triplex_node       0.010     50.0%     10.0
+================ ======== ======== ========
+Total              0.020    100.0%      1.2
+

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++
+END
+drivermanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/drivermanager.h
+END
+preparedstatement.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/preparedstatement.h
+END
+errorhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/errorhandler.h
+END
+threads.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/threads.h
+END
+resultset.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/resultset.h
+END
+resultsetmetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/resultsetmetadata.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/Makefile.in
+END
+connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/connection.h
+END
+setup.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/setup.h
+END
+statement.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/statement.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/types.h
+END
+databasemetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/databasemetadata.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/config.h
+END
+config-win32.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/config-win32.h
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/config.h.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/Makefile.am
+END
+callablestatement.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++/callablestatement.h
+END

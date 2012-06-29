@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/test
+END
+evcharger.glm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/test/evcharger.glm
+END
+etp_solution_check.xls
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/test/etp_solution_check.xls
+END
+evcharger_demand_profile.csv
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/test/evcharger_demand_profile.csv
+END
+weather.csv
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/test/weather.csv
+END
+Thermal2.glm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/residential/test/Thermal2.glm
+END

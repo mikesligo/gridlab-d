@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test
+END
+test_UG.glm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_UG.glm
+END
+test_XFMR.glm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_XFMR.glm
+END
+test_bk.glm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_bk.glm
+END
+test_meter.glm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_meter.glm
+END
+input.glm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/input.glm
+END
+test.glm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test.glm
+END
+assert.glm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/assert.glm
+END
+test2.glm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test2.glm
+END
+test_fuse.glm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_fuse.glm
+END
+test_triplex_meter.glm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_triplex_meter.glm
+END
+test_regulator.glm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_regulator.glm
+END
+test_SPCT_XFMR.glm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_SPCT_XFMR.glm
+END
+test_OH.glm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_OH.glm
+END
+test_triplex.glm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/test/test_triplex.glm
+END

@@ -1,0 +1,47 @@
+
+clock {
+	timezone EST+5EDT;
+	timestamp '2010-01-01 6:00:00';
+	stoptime '2010-01-01 12:00:00';
+	
+}
+
+module powerflow;
+module generators;
+module tape;
+module climate;
+
+module powerflow{
+	solver_method NR;
+	//acceleration_factor 1.4;
+	default_maximum_voltage_error 1e-9;
+}
+
+object climate{
+	name MyClimate;
+	tmyfile WA-Seattle.tmy2;
+	//reader CsvReader;
+	object recorder {
+		file climate_out.csv;
+		interval 3600;
+		limit 60;
+		property temperature,wind_speed;
+	};
+};
+
+object windturb_dg {
+	name test_wdg;
+	phases "ABCN";
+	Gen_status ONLINE;
+	Gen_type SYNCHRONOUS;
+	Gen_mode CONSTANTP;
+	Turbine_Model VESTAS_V82;
+	
+	 object recorder {
+			    file WT_out.csv;
+			    interval 1;
+			//  limit 20000;
+			    property Pconv, TotalRealPow;
+		      	  };
+		      	     	     	 
+		   }
