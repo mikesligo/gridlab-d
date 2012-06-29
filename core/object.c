@@ -1887,7 +1887,7 @@ void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_name
     temp->name = add_name;
     temp->module_name = add_module_name;
     temp->parent = add_parent;
-    temp->next = malloc(sizeof(temp->next));
+    temp->next = malloc(sizeof(STRING_LIST));
     temp->next->next = NULL;
 }
 
@@ -1895,14 +1895,15 @@ STRING_LIST *return_module_names(OBJECTTREE *tree, STRING_LIST *list){
     if(tree == NULL){
         return;
     } 
-    add_to_name_list(list,tree->name,tree->obj->oclass->name, tree->obj->parent->name);
+    if (tree->obj->parent != NULL) add_to_name_list(list,tree->name,tree->obj->oclass->name, tree->obj->parent->name);
+    else add_to_name_list(list,tree->name,tree->obj->oclass->name, 0);
     return_module_names(tree->before, list);
     return_module_names(tree->after, list);
     return list;
 }
 
 STRING_LIST *get_module_names(){
-    STRING_LIST * strings = malloc(sizeof(strings));
+    STRING_LIST * strings = malloc(sizeof(STRING_LIST));
     strings->next = NULL;
     return_module_names(top, strings);
 
