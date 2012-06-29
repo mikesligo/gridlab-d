@@ -1879,14 +1879,8 @@ void object_tree_delete(OBJECT *obj, OBJECTNAME name)
 }
 
 /*
- * The following struct and 3 functions work to create a linked list containing the names and types of all the objects registered to gridlab-d
+ * The following 3 functions (and struct STRING_LIST in the header file) work to create a linked list containing the names and types of all the objects registered to gridlab-d
  */
-typedef struct string_linked_list {
-    char *name;
-    char *module_name;
-    struct string_linked_list * next;
-} STRING_LIST;
-
 void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_name){
     STRING_LIST *temp = list;
     while (temp->next != NULL) temp = temp->next;

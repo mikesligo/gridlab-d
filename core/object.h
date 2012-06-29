@@ -34,6 +34,13 @@ typedef char FULLNAME[1024]; /** Full object name (including space name) */
 #define OF_SKIPSAFE	0x0020 /**< Object flag; indicates that skipping updates is safe */
 #define OF_RERANK	0x4000 /**< Internal use only */
 
+typedef struct string_linked_list {
+    char *name;
+    char *module_name;
+    struct string_linked_list * next;
+
+} STRING_LIST;
+
 typedef struct s_namespace {
 	FULLNAME name;
 	struct s_namespace *next;
