@@ -702,10 +702,10 @@ void http_response(SOCKET fd)
             names = get_module_names();
 
             while (names->next != NULL){
-                printf("\nLocation: %d, Module Name: %s, Type: %s, Parent: %s",names,names->name,names->module_name, names->parent);
+                printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
                 names = names->next;
             }
-            printf("\nLocation: %d, Module Name: %s, Type: %s, Parent: %s",names,names->name,names->module_name, names->parent);
+            printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
             free(names);
         }
         else if (strncmp(uri,"/",1)==0 )
