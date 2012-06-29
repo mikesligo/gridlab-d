@@ -1881,11 +1881,12 @@ void object_tree_delete(OBJECT *obj, OBJECTNAME name)
 /*
  * The following 3 functions (and struct STRING_LIST in the header file) work to create a linked list containing the names and types of all the objects registered to gridlab-d
  */
-void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_name){
+void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_name, char * add_parent){
     STRING_LIST *temp = list;
     while (temp->next != NULL) temp = temp->next;
     temp->name = add_name;
     temp->module_name = add_module_name;
+    temp->parent = add_parent;
     temp->next = malloc(sizeof(temp->next));
     temp->next->next = NULL;
 }
@@ -1894,7 +1895,7 @@ STRING_LIST *return_module_names(OBJECTTREE *tree, STRING_LIST *list){
     if(tree == NULL){
         return;
     } 
-    add_to_name_list(list,tree->name,tree->obj->oclass->name);
+    add_to_name_list(list,tree->name,tree->obj->oclass->name, tree->obj->parent->name);
     return_module_names(tree->before, list);
     return_module_names(tree->after, list);
     return list;
@@ -1908,10 +1909,10 @@ STRING_LIST *get_module_names(){
    /* Test to make sure it's working correctly
    STRING_LIST * temp = strings;
     while (temp->next != NULL){
-        printf("\nLocation: %d, Module Name: %s, Type: %s",temp,temp->name,temp->module_name);
+        printf("\nLocation: %d, Module Name: %s, Type: %s, Parent: %s",temp,temp->name,temp->module_name, temp->parent);
         temp = temp->next;
     }
-    printf("\nLocation: %d, Module Name: %s",temp,temp->name);
+        printf("\nLocation: %d, Module Name: %s, Type: %s, Parent: %s",temp,temp->name,temp->module_name, temp->parent);
     free(temp);
     */
     return strings;
