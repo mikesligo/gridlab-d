@@ -591,6 +591,25 @@ int http_favicon(http)
     fclose(fp); return 0;
 }
 
+int http_list_request(HTTP *http)
+{
+    STRING_LIST * list;
+    list = get_module_names();
+    http_format(http,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
+    http_format(http,"<list>\n");
+    while (list->next != NULL){
+        http_format(http,"\t<modules>\n");
+        http_format(http,"\t\t<name>%s</name>\n", list->name);
+        http_format(http,"\t\t<type>%s</type>\n", list->module_name);
+        http_format(http,"\t\t<parent>%s</parent>\n", list->parent);
+        list = list->next;
+        http_format(http,"\t</modules>\n");
+    }
+    http_format(http,"</list>\n");
+    http_type(http,"text/xml");
+    http_status(http,HTTP_OK);
+    return 0;
+}
 void http_response(SOCKET fd)
 {
     HTTP *http = http_create(fd);
@@ -698,15 +717,17 @@ void http_response(SOCKET fd)
         // custom function to get names of objects - mike
         else if ( strcmp(uri,"/objects")==0 )
         {
-            STRING_LIST * names;
-            names = get_module_names();
+            http_list_request(http);
+            http_send(http);
 
-            while (names->next != NULL){
-                printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
-                names = names->next;
-            }
-            printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
-            free(names);
+            /*printf("\nHttp buffer is: %s\n",http->buffer);
+
+              while (names->next != NULL){
+              printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
+              names = names->next;
+              }
+              printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
+              free(names);*/
         }
         else if (strncmp(uri,"/",1)==0 )
         {
