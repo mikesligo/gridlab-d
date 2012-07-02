@@ -81,6 +81,15 @@ object node {
       nominal_voltage 2401.7771;     
 } 
 
+object node {     
+      name 1650;     
+      phases ABCN;    
+      bustype SWING;	  
+      voltage_A 2401.7771;     
+      voltage_B -1200.8886-2080.000j;     
+      voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2401.7771;     
+} 
 
 object transformer {
        name T1;
