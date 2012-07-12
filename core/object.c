@@ -1879,49 +1879,45 @@ void object_tree_delete(OBJECT *obj, OBJECTNAME name)
 }
 
 /*
- * The following 3 functions (and struct STRING_LIST in the header file) work to create a linked list containing the names and types of all the objects registered to gridlab-d
+ * The following 3 functions (and struct STRING_LIST in the header file) work to create a linked list containing the names, parents and types of all the objects registered to gridlab-d
  */
-void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_name, char * add_parent){
+
+/*
+ * Add types to the linked list
+ */
+void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_type, char * add_parent){
     STRING_LIST *temp = list;
     while (temp->next != NULL) temp = temp->next;
     temp->name = add_name;
-    temp->module_name = add_module_name;
+    temp->module_type = add_module_type;
     temp->parent = add_parent;
     temp->next = malloc(sizeof(STRING_LIST));
     temp->next->next = NULL;
 }
 
-STRING_LIST *return_module_names(OBJECTTREE *tree, STRING_LIST *list){
+/*
+ * Recursive function to go through the tree OBJECTTREE and compile the STRING_LIST list
+ */
+STRING_LIST *compile_string_list(OBJECTTREE *tree, STRING_LIST *list){
     if(tree == NULL){
         return;
     } 
     if (tree->obj->parent != NULL) add_to_name_list(list,tree->name,tree->obj->oclass->name, tree->obj->parent->name);
     else add_to_name_list(list,tree->name,tree->obj->oclass->name, 0);
-    return_module_names(tree->before, list);
-    return_module_names(tree->after, list);
+    compile_string_list(tree->before, list);
+    compile_string_list(tree->after, list);
     return list;
 }
 
-STRING_LIST *get_module_names(){
+/*
+ * Creates a new STRING_LIST and calls on recursive function compile_string_list. It returns the string list to be used in server.c
+ */
+STRING_LIST *get_module_types(){
     STRING_LIST * strings = malloc(sizeof(STRING_LIST));
     strings->next = NULL;
-    return_module_names(top, strings);
-
-   /* Test to make sure it's working correctly
-   STRING_LIST * temp = strings;
-    while (temp->next != NULL){
-        printf("\nLocation: %d, Module Name: %s, Type: %s, Parent: %s",temp,temp->name,temp->module_name, temp->parent);
-        temp = temp->next;
-    }
-        printf("\nLocation: %d, Module Name: %s, Type: %s, Parent: %s",temp,temp->name,temp->module_name, temp->parent);
-    free(temp);
-    */
+    compile_string_list(top, strings);
     return strings;
 }
-
-/*
- * End custom code
- */
 
 /** Find an object from a name.  This only works for named objects.  See object_set_name().
   @return a pointer to the OBJECT structure
@@ -1930,7 +1926,7 @@ OBJECT *object_find_name(OBJECTNAME name){
     OBJECTTREE **item = NULL;
 
     item = findin_tree(top, name);
-    get_module_names();
+    get_module_types();
 
     if(item != NULL && *item != NULL){
         return (*item)->obj;

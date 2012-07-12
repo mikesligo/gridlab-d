@@ -594,13 +594,13 @@ int http_favicon(http)
 int http_list_request(HTTP *http)
 {
     STRING_LIST * list;
-    list = get_module_names();
+    list = get_module_types();
     http_format(http,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
     http_format(http,"<list>\n");
     while (list->next != NULL){
         http_format(http,"\t<modules>\n");
         http_format(http,"\t\t<name>%s</name>\n", list->name);
-        http_format(http,"\t\t<type>%s</type>\n", list->module_name);
+        http_format(http,"\t\t<type>%s</type>\n", list->module_type);
         http_format(http,"\t\t<parent>%s</parent>\n", list->parent);
         list = list->next;
         http_format(http,"\t</modules>\n");
@@ -719,15 +719,6 @@ void http_response(SOCKET fd)
         {
             http_list_request(http);
             http_send(http);
-
-            /*printf("\nHttp buffer is: %s\n",http->buffer);
-
-              while (names->next != NULL){
-              printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
-              names = names->next;
-              }
-              printf("\nModule Name: %s, Type: %s, Parent: %s",names->name,names->module_name, names->parent);
-              free(names);*/
         }
         else if (strncmp(uri,"/",1)==0 )
         {

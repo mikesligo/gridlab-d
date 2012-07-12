@@ -1,0 +1,898 @@
+//Radial ( 3 branches, 9 households) simulation environement, poletop transformer used for each household
+
+clock {
+     timezone PST+8PDT;
+     starttime '2009-07-20 00:00:00';
+     stoptime '2009-08-17 00:00:00';
+}
+
+
+#define stylesheet=http://gridlab-d.svn.sourceforge.net/viewvc/gridlab-d/trunk/core/gridlabd-2_0
+#set minimum_timestep=60;
+#set profiler=1;
+#set relax_naming_rules=1;
+
+module tape;
+
+module residential {
+     implicit_enduses NONE;
+}
+module powerflow {
+     solver_method FBS;
+     NR_iteration_limit 100;
+}
+
+
+//Configurations
+   
+// Triplex Line
+object triplex_line_configuration {
+      name trip_line_config;
+      conductor_1 object triplex_line_conductor {
+            resistance 0.97;
+            geometric_mean_radius 0.01111;
+            };
+      conductor_2 object triplex_line_conductor {
+            resistance 0.97;
+            geometric_mean_radius 0.01111;
+            };
+      conductor_N object triplex_line_conductor {
+            resistance 0.97;
+            geometric_mean_radius 0.01111;
+            };
+      insulation_thickness 0.08;
+      diameter 0.368;
+} 
+
+//Main transformer
+object transformer_configuration {     
+      name transformer_configuration_TTD;     
+      connect_type WYE_WYE;     
+      install_type PADMOUNT;     
+      power_rating 1;     
+      primary_voltage 12470;     
+      secondary_voltage 2400;     
+      resistance 0.011;     
+      reactance 0.02;     
+}
+
+
+//Poletop transformers
+object transformer_configuration {
+            name transformer_configuration_poletopA;
+			connect_type SINGLE_PHASE_CENTER_TAPPED;
+            install_type POLETOP;
+            shunt_impedance 10000+10000j;
+            primary_voltage 2400;
+            secondary_voltage 120;
+            powerA_rating 3.3;
+            impedance 0.00033+0.0022j;
+}
+
+object transformer_configuration {
+            name transformer_configuration_poletopB;
+			connect_type SINGLE_PHASE_CENTER_TAPPED;
+            install_type POLETOP;
+            shunt_impedance 10000+10000j;
+            primary_voltage 2400;
+            secondary_voltage 120;
+            powerB_rating 3.3;
+            impedance 0.00033+0.0022j;
+}
+
+object transformer_configuration {
+            name transformer_configuration_poletopC;
+			connect_type SINGLE_PHASE_CENTER_TAPPED;
+            install_type POLETOP;
+            shunt_impedance 10000+10000j;
+            primary_voltage 2400;
+            secondary_voltage 120;
+            powerC_rating 3.3;
+            impedance 0.00033+0.0022j;
+}
+
+//overhead line configuration
+
+object line_configuration {
+	name line_config_A;
+	conductor_A overhead_line_conductor_100;
+	conductor_B overhead_line_conductor_100;
+	conductor_C overhead_line_conductor_100;
+	conductor_N overhead_line_conductor_101;
+	spacing line_spacing_200;
+	}
+	
+object line_spacing {
+	name line_spacing_200;
+	distance_AB 2.5;
+	distance_BC 4.5;
+	distance_AC 7.0;
+	distance_AN 5.656854;
+	distance_BN 4.272002;
+	distance_CN 5.0;
+	}
+	
+object overhead_line_conductor {
+	name overhead_line_conductor_100;
+	geometric_mean_radius .00446;
+	resistance 1.12;
+	}
+
+object overhead_line_conductor {
+	name overhead_line_conductor_101;
+	geometric_mean_radius .00446;
+	resistance 1.12;
+	}	
+
+
+//Structure
+	   
+
+object node {
+	name NT;
+	phases ABCN;
+	//phaseA_V +7199.558+0.000j;
+	//phaseB_V -3599.779-6235.000j;
+	//phaseC_V -3599.779+6235.000j;
+	nominal_voltage 12470;
+	bustype SWING;
+}	
+
+object transformer {
+       name TTD;
+       phases ABCN;
+       from NT;
+       to ND;
+       configuration transformer_configuration_TTD;
+       groupid Transmission_Trans;
+}
+
+	   
+object meter {     
+      name ND;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+} 
+
+//Overhead lines and house nodes (all on one branch distance 1000 fett from main transformer and then 100 feet between every household)
+
+object overhead_line {
+	name NDtoNH1;
+	phases ABCN;
+	from ND;
+	to NH1;
+	length 1000;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH1;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}	
+	
+object overhead_line {
+	name NH1toNH2;
+	phases ABCN;
+	from NH1;
+	to NH2;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH2;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}	
+
+object overhead_line {
+	name NH2toNH3;
+	phases ABCN;
+	from NH2;
+	to NH3;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH3;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}
+
+object overhead_line {
+	name NH3toNH4;
+	phases ABCN;
+	from NH3;
+	to NH4;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH4;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}
+
+object overhead_line {
+	name NH4toNH5;
+	phases ABCN;
+	from NH4;
+	to NH5;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH5;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}
+
+object overhead_line {
+	name NH5toNH6;
+	phases ABCN;
+	from NH5;
+	to NH6;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH6;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}
+
+object overhead_line {
+	name NH6toNH7;
+	phases ABCN;
+	from NH6;
+	to NH7;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH7;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}
+
+object overhead_line {
+	name NH7toNH8;
+	phases ABCN;
+	from NH7;
+	to NH8;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH8;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}
+
+object overhead_line {
+	name NH8toNH9;
+	phases ABCN;
+	from NH8;
+	to NH9;
+	length 100;  //feet
+	configuration line_config_A;
+	}
+	
+object node {     
+      name NH9;     
+      phases ABCN;     
+      //voltage_A 2401.7771;     
+      //voltage_B -1200.8886-2080.000j;     
+      //voltage_C -1200.8886+2080.000j;     
+      nominal_voltage 2400;     
+}
+
+//poletop transformers (one for each household)	  
+	  
+object transformer {
+       name TH1;
+       phases AS;
+       from NH1;
+       to TRNH1;
+       configuration transformer_configuration_poletopA;
+       groupid Distribution_Trans;
+}
+
+object transformer {
+       name TH2;
+       phases BS;
+       from NH2;
+       to TRNH2;
+       configuration transformer_configuration_poletopB;
+       groupid Distribution_Trans;
+}
+
+object transformer {
+       name TH3;
+       phases CS;
+       from NH3;
+       to TRNH3;
+       configuration transformer_configuration_poletopC;
+       groupid Distribution_Trans;
+}
+
+	  
+object transformer {
+       name TH4;
+       phases AS;
+       from NH4;
+       to TRNH4;
+       configuration transformer_configuration_poletopA;
+       groupid Distribution_Trans;
+}
+
+object transformer {
+       name TH5;
+       phases BS;
+       from NH5;
+       to TRNH5;
+       configuration transformer_configuration_poletopB;
+       groupid Distribution_Trans;
+}
+
+object transformer {
+       name TH6;
+       phases CS;
+       from NH6;
+       to TRNH6;
+       configuration transformer_configuration_poletopC;
+       groupid Distribution_Trans;
+}
+  
+object transformer {
+       name TH7;
+       phases AS;
+       from NH7;
+       to TRNH7;
+       configuration transformer_configuration_poletopA;
+       groupid Distribution_Trans;
+}
+
+object transformer {
+       name TH8;
+       phases BS;
+       from NH8;
+       to TRNH8;
+       configuration transformer_configuration_poletopB;
+       groupid Distribution_Trans;
+}
+
+object transformer {
+       name TH9;
+       phases CS;
+       from NH9;
+       to TRNH9;
+       configuration transformer_configuration_poletopC;
+       groupid Distribution_Trans;
+}
+
+
+// Household triplex nodes
+
+object triplex_node {
+       name TRNH1;
+       phases AS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH2;
+       phases BS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH3;
+       phases CS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH4;
+       phases AS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH5;
+       phases BS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH6;
+       phases CS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH7;
+       phases AS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH8;
+       phases BS;
+       nominal_voltage 120;
+}
+
+object triplex_node {
+       name TRNH9;
+       phases CS;
+       nominal_voltage 120;
+}
+
+//Triplex lines from transformer to house (triplex node to triplex meter)
+object triplex_line {
+       name TRLH1;
+       phases AS;
+       from TRNH1;
+       to TRMH1;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH2;
+       phases BS;
+       from TRNH2;
+       to TRMH2;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH3;
+       phases CS;
+       from TRNH3;
+       to TRMH3;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH4;
+       phases AS;
+       from TRNH4;
+       to TRMH4;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH5;
+       phases BS;
+       from TRNH5;
+       to TRMH5;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH6;
+       phases CS;
+       from TRNH6;
+       to TRMH6;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH7;
+       phases AS;
+       from TRNH7;
+       to TRMH7;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH8;
+       phases BS;
+       from TRNH8;
+       to TRMH8;
+       length 100;
+       configuration trip_line_config;
+}
+
+object triplex_line {
+       name TRLH9;
+       phases CS;
+       from TRNH9;
+       to TRMH9;
+       length 100;
+       configuration trip_line_config;
+}
+
+
+
+//Triple meters (inside every household)s
+object triplex_meter {
+       name TRMH1;
+       phases AS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH2;
+       phases BS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH3;
+       phases CS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH4;
+       phases AS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH5;
+       phases BS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH6;
+       phases CS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH7;
+       phases AS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH8;
+       phases BS;
+       nominal_voltage 120;
+}
+
+object triplex_meter {
+       name TRMH9;
+       phases CS;
+       nominal_voltage 120;
+}
+
+//Houses (with loads)
+object house {
+     parent TRMH1;
+     name H1;
+     
+	   // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1388.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH2;
+     name H2;
+     
+		// Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1425.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH3;
+     name H3;
+     
+       // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1428.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH4;
+     name H4;
+     
+       // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1428.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH5;
+     name H5;
+     
+       // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1435.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH6;
+     name H6;
+     
+       // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1440.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH7;
+     name H7;
+     
+       // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1388.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH8;
+     name H8;
+     
+       // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1440.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+object house {
+     parent TRMH9;
+     name H9;
+     
+       // Plug load (convenience loads)
+       object ZIPload {
+              groupid householdLoad;
+					object player {
+						property base_power;
+						file 1425.csv;
+						//loop 0;
+					};	
+              //base_power plug1*2.477490;
+              power_fraction 1.00000;
+              impedance_fraction 0.000000;
+              current_fraction 0.000000;
+              power_pf 1.00000;
+              current_pf 0.950000;
+              impedance_pf 0.950000;
+       };
+
+}
+
+
+
+//Recorders
+//Transformer
+object recorder {
+     parent ND;
+     file V_Data_transformer.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_A.real,voltage_A.imag, voltage_B.real,voltage_B.imag, voltage_C.real,voltage_C.imag;
+};
+
+
+//branch1
+object recorder {
+     parent TRMH1;
+     file V_tm_1.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent TRMH2;
+     file V_tm_2.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent TRMH3;
+     file V_tm_3.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+//branch2
+object recorder {
+     parent TRMH4;
+     file V_tm_4.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent TRMH5;
+     file V_tm_5.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent TRMH6;
+     file V_tm_6.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+//branch3
+object recorder {
+     parent TRMH7;
+     file V_tm_7.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent TRMH8;
+     file V_tm_8.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent TRMH9;
+     file V_tm_9.csv;
+     interval 1800;
+     limit 1000000;
+     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};

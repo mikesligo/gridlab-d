@@ -36,8 +36,8 @@ typedef char FULLNAME[1024]; /** Full object name (including space name) */
 
 typedef struct string_linked_list {
     char *name;
-    char *module_name;
-    char *parent;
+    char *module_type;
+    char *parent_name;
     struct string_linked_list * next;
 
 } STRING_LIST;

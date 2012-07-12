@@ -1,19 +1,19 @@
 clock {
-     timezone PST+8PDT;
-     starttime '2000-01-01 00:00:00';
-     stoptime '2001-06-02 00:00:00';
+    timezone PST+8PDT;
+    starttime '2000-01-01 00:00:00';
+    stoptime '2001-06-02 00:00:00';
 }
 
 module residential {
-     implicit_enduses NONE;
+    implicit_enduses NONE;
 };
 
 object house {
-     name house1;
-     mass_temperature 70;
-}
+    name house1;
+    mass_temperature 70;
+    object waterheater {
+        name waterheater1;
+        tank_volume 50;
+    };
 
-object house {
-     name house2;
-     mass_temperature 70;
 }
