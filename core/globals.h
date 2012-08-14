@@ -43,6 +43,7 @@ GLOBALVAR *global_create(char *name, ...);
 STATUS global_setvar(char *def,...);
 char *global_getvar(char *name, char *buffer, int size);
 void global_dump(void);
+void set_global_run_realtime(int set);
 
 /* MAJOR and MINOR version */
 GLOBAL unsigned global_version_major INIT(REV_MAJOR); /**< The software's major version */

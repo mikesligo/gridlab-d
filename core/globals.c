@@ -486,4 +486,9 @@ void global_dump(void)
 	}
 }
 
+void set_global_run_realtime(int set)
+{
+    global_run_realtime = set;
+}
+
 /**@}**/

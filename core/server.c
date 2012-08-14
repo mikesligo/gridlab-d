@@ -189,7 +189,7 @@ STATUS server_startup(int argc, char *argv[])
 
 /********************************************************
   HTTP routines
- */
+  */
 
 typedef struct s_http {
     char query[1024];
@@ -609,6 +609,31 @@ int http_list_request(HTTP *http)
     http_status(http,HTTP_OK);
     return 0;
 }
+
+http_set_realtime(HTTP *http, char *uri)
+{
+    char arg1[1024]="", arg2[1024]="";
+    int nargs = sscanf(uri,"%1023[^/=\r\n]/%1023[^\r\n=]",arg1,arg2);
+    char *value = strchr(uri,'=');
+    char buffer[1024]="";
+    OBJECT *obj=NULL;
+    char *id;
+
+    /* value */
+    if (value) *value++;
+
+    /* decode %.. */
+    http_decode(arg1);
+    http_decode(arg2);
+    if (value) http_decode(value);
+    else http_status(http,HTTP_NOTFOUND);
+
+    set_global_run_realtime(atoi(value));
+    http_format(http,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
+    http_format(http,"\t<realtime>%s</realtime>\n", value);
+    http_type(http,"text/xml");
+}
+
 void http_response(SOCKET fd)
 {
     HTTP *http = http_create(fd);
@@ -717,6 +742,11 @@ void http_response(SOCKET fd)
         else if ( strcmp(uri,"/objects")==0 )
         {
             http_list_request(http);
+            http_send(http);
+        }
+        else if ( strncmp(uri,"/realtime",9)==0 )
+        {
+            http_set_realtime(http, uri+1);
             http_send(http);
         }
         else if (strncmp(uri,"/",1)==0 )
