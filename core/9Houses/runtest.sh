@@ -1,1 +1,1 @@
-../gridlabd -D run_realtime=60 Model.glm --server --verbose -P 10001
+../gridlabd -D run_realtime=2000 Model.glm --server --verbose -P 10001

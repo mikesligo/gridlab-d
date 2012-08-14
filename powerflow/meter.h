@@ -10,6 +10,13 @@
 class meter : public node
 {
 public:
+	
+	//Luca Meschiari - Start
+	double connection_ratio;        ///< Connection ratio
+	double proj_power;        ///< projected power load on the transformer
+	//Luca Meschiari - End
+
+
 	complex measured_voltage[3];	///< measured voltage
 	complex measured_voltageD[3];	///< measured voltage - Line-to-Line
 	complex measured_current[3];	///< measured current

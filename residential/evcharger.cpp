@@ -297,6 +297,13 @@ evcharger::evcharger(MODULE *module) : residential_enduse(module)
 			PT_double,"charge[unit]",PADDR(charge),
 			PT_bool,"charge_at_work",PADDR(charge_at_work),
 			PT_double,"charge_throttle[unit]", PADDR(charge_throttle),
+
+			//Luca Meschiari - Start
+			PT_double,"mileage", PADDR(mileage),
+			PT_double,"ranValue", PADDR(ranValue),
+			PT_bool,"isCharging",PADDR(isCharging),
+			//Luca Meschiari - End
+
 			PT_char1024,"demand_profile", PADDR(demand_profile),
 			NULL)<1) 
 			GL_THROW("unable to publish properties in %s",__FILE__);
@@ -336,6 +343,11 @@ int evcharger::init(OBJECT *parent)
 	// these are not yet supported
 	//if (distance.shorttrip==0) distance.shorttrip = gl_random_lognormal(3,1);
 	//if (distance.longtrip==0) distance.longtrip = gl_random_lognormal(4,2);
+
+	//Luca Meschiari - Start
+		isCharging = false;
+		lastIteration = 0;
+	//Luca Meschiari - End
 
 	OBJECT *hdr = OBJECTHDR(this);
 	hdr->flags |= OF_SKIPSAFE;
@@ -379,14 +391,24 @@ double evcharger::update_state(double dt /* seconds */)
 		// implement any state change (arrival/departure)
 		switch (vehicle_state) {
 		case VS_HOME:
-			if (gl_random_bernoulli(demand.home*dt/3600))
+			//if (gl_random_bernoulli(demand.home*dt/3600))
+			
+			//Luca Meschiari - Start   Override random
+			if (demand.home>0)
+			////Luca Meschiari - End
+
 			{
 				gl_debug("%s (%s:%d) leaves for work with %.0f%% charge",obj->name?obj->name:"anonymous",obj->oclass->name,obj->id,charge*100);
 				vehicle_state = VS_WORK;
 			}
 			break;
 		case VS_WORK:
-			if (gl_random_bernoulli(demand.work*dt/3600))
+			//if (gl_random_bernoulli(demand.work*dt/3600))
+			
+			//Luca Meschiari - Start	Override random
+			if (demand.work>0)
+			////Luca Meschiari - End
+
 			{
 				vehicle_state = VS_HOME;
 				if (charge_at_work)
@@ -425,7 +447,33 @@ double evcharger::update_state(double dt /* seconds */)
 	// evaluate effect of current state on home
 	switch (vehicle_state) {
 	case VS_HOME:
-		if (charge<1.0 && obj->clock>0)
+		
+		//Luca Meschiari - Start
+		if ((lastIteration == 0)||(gl_tominutes(obj->clock - lastIteration)> 15)){ //First iteration or 15 minutes passed
+			lastIteration = obj->clock;    //set current time
+			
+			OBJECT* object = gl_get_object("ND");		//Get Connection Ratio
+			PROPERTY *prop = gl_get_property(object, "connection_ratio"); 
+			double* c = gl_get_double(object, prop);
+			double connRatio = *c;
+			
+			//srand ( time(NULL) );  //Charging decision
+			int r = rand() % 89 + 1;
+			ranValue= r;
+
+			if (r <= connRatio){
+				isCharging = true;
+			}
+			else {
+				isCharging = false;
+			}
+
+		}
+		//Luca Meschiari - End
+		isCharging = true;
+
+
+		if (charge<1.0 && obj->clock>0 && isCharging)
 		{
 			// compute the charging power
 			double charge_kw;
@@ -534,9 +582,19 @@ TIMESTAMP evcharger::sync(TIMESTAMP t0, TIMESTAMP t1)
 {
 	OBJECT *obj = OBJECTHDR(this);
 	// compute the total load and heat gain
+
+	//Luca Meschiari Test - Start
+		//printf("1)  energy = %f , total = %f, heatgain %f \n", load.energy, load.total, load.heatgain);
+	//Luca Meschiari Test - End
+
 	if (t0>TS_ZERO && t1>t0)
 			load.energy += (load.total * gl_tohours(t1-t0));
 	double dt = update_state(gl_toseconds(t1-t0));
+	
+	//Luca Meschiari Test - Start
+		//printf("2)  energy = %f , total = %f, heatgain %f \n", load.energy, load.total, load.heatgain);
+	//Luca Meschiari Test - End
+
 	if (dt==0)
 		gl_warning("%s (%s:%d) didn't advance the clock",obj->name?obj->name:"anonymous",obj->oclass->name,obj->id);
 
@@ -591,6 +649,10 @@ EXPORT int isa_evcharger(OBJECT *obj, char *classname)
 EXPORT TIMESTAMP sync_evcharger(OBJECT *obj, TIMESTAMP t0)
 {
 	try {
+		//Luca Meschiari Test- Start
+			//printf("evCharger sync   |||   ");
+		//Luca Meschiari Test- End
+		
 		evcharger *my = OBJECTDATA(obj, evcharger);
 		TIMESTAMP t1 = my->sync(obj->clock, t0);
 		obj->clock = t0;

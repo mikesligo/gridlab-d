@@ -474,7 +474,8 @@ TIMESTAMP emissions::postsync(TIMESTAMP t0)
 	if ((curr_cycle_time == t0) && (NR_cycle == true))	//Accumulation cycle
 	{
 		//Grab the current power value - put in kVA
-		temp_power = (ParMeterObj->indiv_measured_power[0] + ParMeterObj->indiv_measured_power[1] + ParMeterObj->indiv_measured_power[2]);
+		//temp_power = (ParMeterObj->indiv_measured_power[0] + ParMeterObj->indiv_measured_power[1] + ParMeterObj->indiv_measured_power[2]);
+        temp_power = 0;
 		cycle_power = (temp_power.Re()) / 1000.0;
 	}
 	

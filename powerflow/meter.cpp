@@ -69,6 +69,11 @@ meter::meter(MODULE *mod) : node(mod)
 			PT_double, "measured_reactive_power[VAr]", PADDR(measured_reactive_power),
 			PT_complex, "meter_power_consumption[VA]", PADDR(meter_power_consumption),
 			
+			//Luca Meschiari - Start
+			PT_double,"proj_power",PADDR(proj_power),
+			PT_double, "connection_ratio", PADDR(connection_ratio),
+			//Luca Meschiari - End
+
 			// added to record last voltage/current
 			PT_complex, "measured_voltage_A[V]", PADDR(measured_voltage[0]),
 			PT_complex, "measured_voltage_B[V]", PADDR(measured_voltage[1]),
@@ -138,6 +143,10 @@ int meter::create()
 	t_flag=0;
 	pre_load=0;
 #endif
+
+	//Luca Meschiari - Start
+	connection_ratio = 2;        ///< Connection ratio
+	//Luca Meschiari - End
 
 	measured_voltage[0] = measured_voltage[1] = measured_voltage[2] = complex(0,0,A);
 	measured_voltageD[0] = measured_voltageD[1] = measured_voltageD[2] = complex(0,0,A);
@@ -241,6 +250,17 @@ int meter::check_prices(){
 }
 TIMESTAMP meter::presync(TIMESTAMP t0)
 {
+	//Luca Meschiari Test- Start
+		//printf("meter presync   |||   ");
+	//Luca Meschiari Test- End
+
+	//Luca Meschiari - Start
+		connection_ratio = floor ((120000 - proj_power)/1800);  //Calculate the connection ratio
+		//printf("%f",connection_ratio);
+		if (connection_ratio < 1)					//check connection ratio > 0
+			connection_ratio = 0; 
+	//Luca Meschiari - Start
+	
 	if (meter_power_consumption != complex(0,0))
 		power[0] = power[1] = power[2] = 0.0;
 
@@ -254,6 +274,14 @@ TIMESTAMP meter::presync(TIMESTAMP t0)
 
 TIMESTAMP meter::sync(TIMESTAMP t0)
 {
+	//Luca Meschiari Test- Start
+		//printf("meter sync   |||   ");
+	//Luca Meschiari Test- End
+	
+	// Luca Meschiari Test - Start
+		//printf("--- %f ---", proj_power);
+	// Luca Meschiari Test - Start
+
 	int TempNodeRef;
 
 	//Reliability check
@@ -299,6 +327,11 @@ TIMESTAMP meter::sync(TIMESTAMP t0)
 
 TIMESTAMP meter::postsync(TIMESTAMP t0, TIMESTAMP t1)
 {
+	//Luca Meschiari Test- Start
+		//printf("meter postsync   |||   ");
+	//Luca Meschiari Test- End
+	
+	
 	measured_voltage[0] = voltageA;
 	measured_voltage[1] = voltageB;
 	measured_voltage[2] = voltageC;

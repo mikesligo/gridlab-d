@@ -121,7 +121,7 @@ void billdump::dump(TIMESTAMP t){
 				if(obj->name == NULL){
 					sprintf(namestr, "%s:%i", obj->oclass->name, obj->id);
 				}
-				fprintf(outfile,"%s,%f,%f\n",(obj->name ? obj->name : namestr),pnode->previous_monthly_bill,pnode->previous_monthly_energy);
+				//fprintf(outfile,"%s,%f,%f\n",(obj->name ? obj->name : namestr),pnode->previous_monthly_bill,pnode->previous_monthly_energy);
 			}
 		}
 	}
@@ -137,7 +137,7 @@ void billdump::dump(TIMESTAMP t){
 				if(obj->name == NULL){
 					sprintf(namestr, "%s:%i", obj->oclass->name, obj->id);
 				}
-				fprintf(outfile,"%s,%f,%f\n",(obj->name ? obj->name : namestr),qnode->previous_monthly_bill,qnode->previous_monthly_energy);
+				//fprintf(outfile,"%s,%f,%f\n",(obj->name ? obj->name : namestr),qnode->previous_monthly_bill,qnode->previous_monthly_energy);
 			}
 		}
 	}

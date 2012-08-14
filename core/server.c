@@ -461,7 +461,6 @@ int http_xml_request(HTTP *http,char *uri)
             http_format(http,"\t<object>%s</object>\n", arg1);
             http_format(http,"\t<name>%s</name>\n", arg2);
             http_format(http,"\t<value>%s</value>\n", http_unquote(buffer));
-            /* TODO add property type info */
             http_format(http,"</property>\n");
             http_type(http,"text/xml");
             return 1;
@@ -601,7 +600,7 @@ int http_list_request(HTTP *http)
         http_format(http,"\t<modules>\n");
         http_format(http,"\t\t<name>%s</name>\n", list->name);
         http_format(http,"\t\t<type>%s</type>\n", list->module_type);
-        http_format(http,"\t\t<parent>%s</parent>\n", list->parent);
+        http_format(http,"\t\t<parent>%s</parent>\n", list->parent_name);
         list = list->next;
         http_format(http,"\t</modules>\n");
     }

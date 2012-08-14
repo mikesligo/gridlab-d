@@ -78,6 +78,12 @@ public:
 	double charge_throttle;		///< charge throttle (0-1)
 	char1024 demand_profile;	///< filename of demand profile
 
+	//Luca Meschiari - Start
+		bool isCharging;			///< define if in this timestep (15 minutes) the car is charging
+		TIMESTAMP lastIteration;	///< Timestamp of last Iteration
+		double ranValue;
+	//Luca Meschiari - End
+
 public:
 	static CLASS *oclass, *pclass;
 	static evcharger *defaults;

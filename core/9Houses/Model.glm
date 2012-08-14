@@ -2,8 +2,8 @@
 
 clock {
      timezone PST+8PDT;
-     starttime '2009-07-20 00:00:00';
-     stoptime '2009-08-17 00:00:00';
+     starttime '2009-08-17 00:00:00';
+     stoptime '2009-09-14 00:00:00';
 }
 
 
@@ -22,6 +22,10 @@ module powerflow {
      NR_iteration_limit 100;
 }
 
+//Player definition
+class player {
+    double value;
+}
 
 //Configurations
    
@@ -49,7 +53,7 @@ object transformer_configuration {
       name transformer_configuration_TTD;     
       connect_type WYE_WYE;     
       install_type PADMOUNT;     
-      power_rating 1;     
+      power_rating 15;     
       primary_voltage 12470;     
       secondary_voltage 2400;     
       resistance 0.011;     
@@ -60,83 +64,83 @@ object transformer_configuration {
 //Poletop transformers
 object transformer_configuration {
             name transformer_configuration_poletopA;
-			connect_type SINGLE_PHASE_CENTER_TAPPED;
+            connect_type SINGLE_PHASE_CENTER_TAPPED;
             install_type POLETOP;
             shunt_impedance 10000+10000j;
             primary_voltage 2400;
             secondary_voltage 120;
-            powerA_rating 3.3;
+            powerA_rating 14.4;  //240V 60 A
             impedance 0.00033+0.0022j;
 }
 
 object transformer_configuration {
             name transformer_configuration_poletopB;
-			connect_type SINGLE_PHASE_CENTER_TAPPED;
+            connect_type SINGLE_PHASE_CENTER_TAPPED;
             install_type POLETOP;
             shunt_impedance 10000+10000j;
             primary_voltage 2400;
             secondary_voltage 120;
-            powerB_rating 3.3;
+            powerB_rating 14.4;  //240V 60 A
             impedance 0.00033+0.0022j;
 }
 
 object transformer_configuration {
             name transformer_configuration_poletopC;
-			connect_type SINGLE_PHASE_CENTER_TAPPED;
+            connect_type SINGLE_PHASE_CENTER_TAPPED;
             install_type POLETOP;
             shunt_impedance 10000+10000j;
             primary_voltage 2400;
             secondary_voltage 120;
-            powerC_rating 3.3;
+            powerC_rating 14.4;  //240V 60 A
             impedance 0.00033+0.0022j;
 }
 
 //overhead line configuration
 
 object line_configuration {
-	name line_config_A;
-	conductor_A overhead_line_conductor_100;
-	conductor_B overhead_line_conductor_100;
-	conductor_C overhead_line_conductor_100;
-	conductor_N overhead_line_conductor_101;
-	spacing line_spacing_200;
-	}
-	
-object line_spacing {
-	name line_spacing_200;
-	distance_AB 2.5;
-	distance_BC 4.5;
-	distance_AC 7.0;
-	distance_AN 5.656854;
-	distance_BN 4.272002;
-	distance_CN 5.0;
-	}
-	
+    name line_config_A;
+    conductor_A overhead_line_conductor_100;
+    conductor_B overhead_line_conductor_100;
+    conductor_C overhead_line_conductor_100;
+    conductor_N overhead_line_conductor_101;
+    spacing line_spacing_200;
+    }
+    
+object line_spacing {  //0 distance because single cable(residential area)
+    name line_spacing_200;
+    distance_AB 0;
+    distance_BC 0;
+    distance_AC 0;
+    distance_AN 0;
+    distance_BN 0;
+    distance_CN 0;
+    }
+    
 object overhead_line_conductor {
-	name overhead_line_conductor_100;
-	geometric_mean_radius .00446;
-	resistance 1.12;
-	}
+    name overhead_line_conductor_100;
+    geometric_mean_radius .00446;
+    resistance 1.12;
+    }
 
 object overhead_line_conductor {
-	name overhead_line_conductor_101;
-	geometric_mean_radius .00446;
-	resistance 1.12;
-	}	
+    name overhead_line_conductor_101;
+    geometric_mean_radius .00446;
+    resistance 1.12;
+    }   
 
 
 //Structure
-	   
+       
 
 object node {
-	name NT;
-	phases ABCN;
-	//phaseA_V +7199.558+0.000j;
-	//phaseB_V -3599.779-6235.000j;
-	//phaseC_V -3599.779+6235.000j;
-	nominal_voltage 12470;
-	bustype SWING;
-}	
+    name NT;
+    phases ABCN;
+    //phaseA_V +7199.558+0.000j;
+    //phaseB_V -3599.779-6235.000j;
+    //phaseC_V -3599.779+6235.000j;
+    nominal_voltage 12470;
+    bustype SWING;
+}   
 
 object transformer {
        name TTD;
@@ -147,10 +151,20 @@ object transformer {
        groupid Transmission_Trans;
 }
 
-	   
+
+//Player for predicted load (read by meter)         
+object player { 
+    name TLoadPRED; 
+    file LoadSchedule.csv;
+    loop 28;
+}
+       
 object meter {     
       name ND;     
-      phases ABCN;     
+      phases ABCN;
+      
+      //proj_power TLoadPRED.value*1;
+        
       //voltage_A 2401.7771;     
       //voltage_B -1200.8886-2080.000j;     
       //voltage_C -1200.8886+2080.000j;     
@@ -160,14 +174,14 @@ object meter {
 //Overhead lines and house nodes (all on one branch distance 1000 fett from main transformer and then 100 feet between every household)
 
 object overhead_line {
-	name NDtoNH1;
-	phases ABCN;
-	from ND;
-	to NH1;
-	length 1000;  //feet
-	configuration line_config_A;
-	}
-	
+    name NDtoNH1;
+    phases ABCN;
+    from ND;
+    to NH1;
+    length 1000;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH1;     
       phases ABCN;     
@@ -175,17 +189,17 @@ object node {
       //voltage_B -1200.8886-2080.000j;     
       //voltage_C -1200.8886+2080.000j;     
       nominal_voltage 2400;     
-}	
-	
+}   
+    
 object overhead_line {
-	name NH1toNH2;
-	phases ABCN;
-	from NH1;
-	to NH2;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH1toNH2;
+    phases ABCN;
+    from NH1;
+    to NH2;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH2;     
       phases ABCN;     
@@ -193,17 +207,17 @@ object node {
       //voltage_B -1200.8886-2080.000j;     
       //voltage_C -1200.8886+2080.000j;     
       nominal_voltage 2400;     
-}	
+}   
 
 object overhead_line {
-	name NH2toNH3;
-	phases ABCN;
-	from NH2;
-	to NH3;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH2toNH3;
+    phases ABCN;
+    from NH2;
+    to NH3;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH3;     
       phases ABCN;     
@@ -214,14 +228,14 @@ object node {
 }
 
 object overhead_line {
-	name NH3toNH4;
-	phases ABCN;
-	from NH3;
-	to NH4;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH3toNH4;
+    phases ABCN;
+    from NH3;
+    to NH4;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH4;     
       phases ABCN;     
@@ -232,14 +246,14 @@ object node {
 }
 
 object overhead_line {
-	name NH4toNH5;
-	phases ABCN;
-	from NH4;
-	to NH5;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH4toNH5;
+    phases ABCN;
+    from NH4;
+    to NH5;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH5;     
       phases ABCN;     
@@ -250,14 +264,14 @@ object node {
 }
 
 object overhead_line {
-	name NH5toNH6;
-	phases ABCN;
-	from NH5;
-	to NH6;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH5toNH6;
+    phases ABCN;
+    from NH5;
+    to NH6;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH6;     
       phases ABCN;     
@@ -268,14 +282,14 @@ object node {
 }
 
 object overhead_line {
-	name NH6toNH7;
-	phases ABCN;
-	from NH6;
-	to NH7;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH6toNH7;
+    phases ABCN;
+    from NH6;
+    to NH7;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH7;     
       phases ABCN;     
@@ -286,14 +300,14 @@ object node {
 }
 
 object overhead_line {
-	name NH7toNH8;
-	phases ABCN;
-	from NH7;
-	to NH8;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH7toNH8;
+    phases ABCN;
+    from NH7;
+    to NH8;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH8;     
       phases ABCN;     
@@ -304,14 +318,14 @@ object node {
 }
 
 object overhead_line {
-	name NH8toNH9;
-	phases ABCN;
-	from NH8;
-	to NH9;
-	length 100;  //feet
-	configuration line_config_A;
-	}
-	
+    name NH8toNH9;
+    phases ABCN;
+    from NH8;
+    to NH9;
+    length 100;  //feet
+    configuration line_config_A;
+    }
+    
 object node {     
       name NH9;     
       phases ABCN;     
@@ -321,8 +335,8 @@ object node {
       nominal_voltage 2400;     
 }
 
-//poletop transformers (one for each household)	  
-	  
+//poletop transformers (one for each household)   
+      
 object transformer {
        name TH1;
        phases AS;
@@ -350,7 +364,7 @@ object transformer {
        groupid Distribution_Trans;
 }
 
-	  
+      
 object transformer {
        name TH4;
        phases AS;
@@ -601,20 +615,58 @@ object triplex_meter {
        nominal_voltage 120;
 }
 
+    
+//Players for loads         
+object player { 
+    name p1388; 
+    file Wr1388.csv;
+    //loop 0;
+}
+
+object player { 
+    name p1425; 
+    file Wr1425.csv;
+    //loop 0;
+}
+
+object player { 
+    name p1428; 
+    file Wr1428.csv;
+    //loop 0;
+}
+
+object player { 
+    name p1435; 
+    file Wr1435.csv;
+    //loop 0;
+}
+
+object player { 
+    name p1440; 
+    file Wr1440.csv;
+    //loop 0;
+}
+
+
+
+
+
 //Houses (with loads)
 object house {
      parent TRMH1;
      name H1;
      
-	   // Plug load (convenience loads)
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
+       // Plug load (convenience loads)
        object ZIPload {
-              groupid householdLoad;
-					object player {
-						property base_power;
-						file 1388.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              groupid householdLoad;    
+              base_power p1388.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -622,6 +674,19 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+       
+       // EV Car
+        object evcharger{
+            name EV1;
+            demand_profile "EvSchedule1.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };  
 
 }
 
@@ -629,15 +694,17 @@ object house {
      parent TRMH2;
      name H2;
      
-		// Plug load (convenience loads)
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
+        // Plug load (convenience loads)
        object ZIPload {
               groupid householdLoad;
-					object player {
-						property base_power;
-						file 1425.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              base_power p1425.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -645,6 +712,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV2;
+            demand_profile "EvSchedule2.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -652,15 +731,17 @@ object house {
      parent TRMH3;
      name H3;
      
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
        // Plug load (convenience loads)
        object ZIPload {
-              groupid householdLoad;
-					object player {
-						property base_power;
-						file 1428.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              groupid householdLoad;    
+              base_power p1428.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -668,6 +749,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV3;
+            demand_profile "EvSchedule3.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -675,15 +768,17 @@ object house {
      parent TRMH4;
      name H4;
      
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
        // Plug load (convenience loads)
        object ZIPload {
               groupid householdLoad;
-					object player {
-						property base_power;
-						file 1428.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              base_power p1428.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -691,6 +786,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV4;
+            demand_profile "EvSchedule1.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -698,15 +805,17 @@ object house {
      parent TRMH5;
      name H5;
      
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
        // Plug load (convenience loads)
        object ZIPload {
-              groupid householdLoad;
-					object player {
-						property base_power;
-						file 1435.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              groupid householdLoad;    
+              base_power p1435.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -714,6 +823,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV5;
+            demand_profile "EvSchedule2.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -721,15 +842,17 @@ object house {
      parent TRMH6;
      name H6;
      
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
        // Plug load (convenience loads)
        object ZIPload {
               groupid householdLoad;
-					object player {
-						property base_power;
-						file 1440.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              base_power p1440.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -737,6 +860,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV6;
+            demand_profile "EvSchedule3.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -744,15 +879,17 @@ object house {
      parent TRMH7;
      name H7;
      
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
        // Plug load (convenience loads)
        object ZIPload {
-              groupid householdLoad;
-					object player {
-						property base_power;
-						file 1388.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              groupid householdLoad;    
+              base_power p1388.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -760,6 +897,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV7;
+            demand_profile "EvSchedule1.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -767,15 +916,17 @@ object house {
      parent TRMH8;
      name H8;
      
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
        // Plug load (convenience loads)
        object ZIPload {
               groupid householdLoad;
-					object player {
-						property base_power;
-						file 1440.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              base_power p1440.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -783,6 +934,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV8;
+            demand_profile "EvSchedule2.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -790,15 +953,17 @@ object house {
      parent TRMH9;
      name H9;
      
+     //Turn off everything
+     heating_system_type NONE;
+     cooling_system_type NONE;
+     fan_type NONE;
+     auxiliary_system_type NONE;
+     auxiliary_strategy NONE;
+     
        // Plug load (convenience loads)
        object ZIPload {
-              groupid householdLoad;
-					object player {
-						property base_power;
-						file 1425.csv;
-						//loop 0;
-					};	
-              //base_power plug1*2.477490;
+              groupid householdLoad;    
+              base_power p1425.value;
               power_fraction 1.00000;
               impedance_fraction 0.000000;
               current_fraction 0.000000;
@@ -806,6 +971,18 @@ object house {
               current_pf 0.950000;
               impedance_pf 0.950000;
        };
+       
+        // EV Car
+        object evcharger{
+            name EV9;
+            demand_profile "EvSchedule3.csv";
+            charger_type LOW;
+            vehicle_type ELECTRIC;
+            capacity 30;
+            ////mileage 10;
+            charge_at_work FALSE;
+            work_dist 50;
+        };
 
 }
 
@@ -818,8 +995,18 @@ object recorder {
      file V_Data_transformer.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_A.real,voltage_A.imag, voltage_B.real,voltage_B.imag, voltage_C.real,voltage_C.imag;
+     property connection_ratio,measured_real_power, measured_power.real, measured_power.imag, voltage_A.real,voltage_A.imag, voltage_B.real,voltage_B.imag, voltage_C.real,voltage_C.imag;
 };
+
+
+//Main transformer temperature
+//object recorder {
+//     parent TTD;
+//     file T_transformer.csv;
+//     interval 1800;
+//     limit 1000000;
+//     property top_oil_hot_spot_temperature, winding_hot_spot_temperature;
+//};
 
 
 //branch1
@@ -828,7 +1015,15 @@ object recorder {
      file V_tm_1.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV1;
+     file EV1.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging, ranValue;
 };
 
 object recorder {
@@ -836,7 +1031,15 @@ object recorder {
      file V_tm_2.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV2;
+     file EV2.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };
 
 object recorder {
@@ -844,7 +1047,15 @@ object recorder {
      file V_tm_3.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV3;
+     file EV3.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };
 
 //branch2
@@ -853,7 +1064,15 @@ object recorder {
      file V_tm_4.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV4;
+     file EV4.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };
 
 object recorder {
@@ -861,7 +1080,15 @@ object recorder {
      file V_tm_5.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV5;
+     file EV5.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };
 
 object recorder {
@@ -869,7 +1096,15 @@ object recorder {
      file V_tm_6.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV6;
+     file EV6.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };
 
 //branch3
@@ -878,7 +1113,15 @@ object recorder {
      file V_tm_7.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV7;
+     file EV7.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };
 
 object recorder {
@@ -886,7 +1129,15 @@ object recorder {
      file V_tm_8.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV8;
+     file EV8.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };
 
 object recorder {
@@ -894,5 +1145,13 @@ object recorder {
      file V_tm_9.csv;
      interval 1800;
      limit 1000000;
-     property measured_real_power, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+     property measured_real_power, measured_power.real, measured_power.imag, voltage_1.real,voltage_1.imag,voltage_2.real,voltage_2.imag,voltage_12.real,voltage_12.imag;
+};
+
+object recorder {
+     parent EV9;
+     file EV9.csv;
+     interval 1800;
+     limit 1000000;
+     property state, charge, isCharging;
 };

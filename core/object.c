@@ -661,8 +661,10 @@ int object_set_value_by_addr(OBJECT *obj, /**< the object to alter */
 							 PROPERTY *prop) /**< the property to use or NULL if unknown */
 {
 	int result=0;
-	if(prop==NULL && (prop=get_property_at_addr(obj,addr))==NULL) 
+	if(prop==NULL && (prop=get_property_at_addr(obj,addr))==NULL) {
+        printf("prop is null\n");
 		return 0;
+    }
 	if(prop->access != PA_PUBLIC){
 		output_error("trying to set the value of non-public property %s in %s", prop->name, obj->oclass->name);
 		/*	TROUBLESHOOT
@@ -1890,7 +1892,7 @@ void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_type
     while (temp->next != NULL) temp = temp->next;
     temp->name = add_name;
     temp->module_type = add_module_type;
-    temp->parent = add_parent;
+    temp->parent_name = add_parent;
     temp->next = malloc(sizeof(STRING_LIST));
     temp->next->next = NULL;
 }
