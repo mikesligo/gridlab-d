@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gridlab-d/!svn/ver/2503/branch/2.2/tape_odbc
+END
+odbctapestream.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbctapestream.h
+END
+TapeStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/TapeStream.cpp
+END
+odbc++d.lib
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++d.lib
+END
+tape_odbc.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/tape_odbc.h
+END
+ODBCConnHandle.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/ODBCConnHandle.h
+END
+TapeStream.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/TapeStream.h
+END
+odbc++d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/odbc++d.dll
+END
+ODBCConnMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/ODBCConnMgr.cpp
+END
+EXPERIMENTAL
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/EXPERIMENTAL
+END
+ODBCTapeStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/ODBCTapeStream.cpp
+END
+ODBCConnMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/ODBCConnMgr.h
+END
+tape_odbc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/tape_odbc.cpp
+END
+ODBCConnHandle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_odbc/ODBCConnHandle.cpp
+END
+tape_odbc.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2503/branch/2.2/tape_odbc/tape_odbc.vcproj
+END

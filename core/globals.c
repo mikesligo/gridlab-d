@@ -491,4 +491,14 @@ void set_global_run_realtime(int set)
     global_run_realtime = set;
 }
 
+int get_global_run_realtime()
+{
+    return global_run_realtime;
+}
+
+char * get_global_clock_string()
+{
+    return simtime();
+}
+
 /**@}**/

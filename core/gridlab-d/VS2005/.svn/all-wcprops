@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gridlab-d/!svn/ver/2730/branch/2.2/VS2005
+END
+xerces-lib.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/xerces-lib.vcproj
+END
+xerces.mak
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/xerces.mak
+END
+gridlabd.rules
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/gridlabd.rules
+END
+superLU_MT.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/superLU_MT.vcproj
+END
+gridlabd.sln
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2391/branch/2.2/VS2005/gridlabd.sln
+END
+build_installer.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/build_installer.py
+END
+gridlabd.iss
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2730/branch/2.2/VS2005/gridlabd.iss
+END
+build_x64.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/build_x64.bat
+END
+vcredist_x86.exe
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/vcredist_x86.exe
+END
+install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/install.bat
+END
+update_sourceforge.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/update_sourceforge.py
+END
+gridlabd-2_0.css
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/gridlabd-2_0.css
+END
+copy_installer.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/copy_installer.py
+END
+dovcbuild.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/dovcbuild.bat
+END
+cppunit.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/cppunit.vcproj
+END
+CBLAS.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/CBLAS.vcproj
+END
+gridlabd2.iss
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/gridlabd2.iss
+END
+cppunit-lib.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/cppunit-lib.vcproj
+END
+gridlabd-debug.iss
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/gridlabd-debug.iss
+END
+cppunit.mak
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/cppunit.mak
+END
+gridlabd-2_0.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/gridlabd-2_0.xsl
+END
+validate.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/validate.vcproj
+END
+xerces.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/VS2005/xerces.vcproj
+END
+gridlabd-64.iss
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2730/branch/2.2/VS2005/gridlabd-64.iss
+END

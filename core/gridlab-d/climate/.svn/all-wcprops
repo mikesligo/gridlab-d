@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gridlab-d/!svn/ver/2662/branch/2.2/climate
+END
+climate.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/climate.vcproj
+END
+weather.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/weather.cpp
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/LICENSE
+END
+STATUS
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/STATUS
+END
+init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/init.cpp
+END
+weather.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/weather.h
+END
+solar_angles.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/solar_angles.cpp
+END
+csv_reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/csv_reader.cpp
+END
+solar_angles.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/solar_angles.h
+END
+climate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/climate.cpp
+END
+test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/test.cpp
+END
+weather_reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/weather_reader.cpp
+END
+csv_reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/csv_reader.h
+END
+climate.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/climate.h
+END
+test.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/test.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/main.cpp
+END
+weather_reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/weather_reader.h
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/COPYRIGHT
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/Makefile.am
+END

@@ -661,10 +661,8 @@ int object_set_value_by_addr(OBJECT *obj, /**< the object to alter */
 							 PROPERTY *prop) /**< the property to use or NULL if unknown */
 {
 	int result=0;
-	if(prop==NULL && (prop=get_property_at_addr(obj,addr))==NULL) {
-        printf("prop is null\n");
+	if(prop==NULL && (prop=get_property_at_addr(obj,addr))==NULL) 
 		return 0;
-    }
 	if(prop->access != PA_PUBLIC){
 		output_error("trying to set the value of non-public property %s in %s", prop->name, obj->oclass->name);
 		/*	TROUBLESHOOT

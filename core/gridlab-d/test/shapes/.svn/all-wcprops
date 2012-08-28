@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes
+END
+other-control-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/other-control-season.shape
+END
+hvac-control-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hvac-control-season.shape
+END
+HVA-base.shape
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/HVA-base.shape
+END
+freezer-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/freezer-season.shape
+END
+other-base.shape
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/other-base.shape
+END
+hvac-base.shape
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hvac-base.shape
+END
+hotwater-base-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hotwater-base-season.shape
+END
+HVA-control.shape
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/HVA-control.shape
+END
+refridgerator.shape
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/refridgerator.shape
+END
+hvac-mcs.shape
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hvac-mcs.shape
+END
+dishwasher.shape
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/dishwasher.shape
+END
+other-mcs.shape
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/other-mcs.shape
+END
+freezer.shape
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/freezer.shape
+END
+hotwater-mcs-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hotwater-mcs-season.shape
+END
+HOT-mcs.shape
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/HOT-mcs.shape
+END
+hotwater-control.shape
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hotwater-control.shape
+END
+other-base-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/other-base-season.shape
+END
+hvac-base-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hvac-base-season.shape
+END
+dryer.shape
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/dryer.shape
+END
+refridgerator-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/refridgerator-season.shape
+END
+other-mcs-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/other-mcs-season.shape
+END
+hvac-mcs-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hvac-mcs-season.shape
+END
+plugs.shape
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/plugs.shape
+END
+HVA-mcs.shape
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/HVA-mcs.shape
+END
+other-control.shape
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/other-control.shape
+END
+hvac-control.shape
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hvac-control.shape
+END
+hotwater-control-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hotwater-control-season.shape
+END
+clotheswasher-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/clotheswasher-season.shape
+END
+HOT-base.shape
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/HOT-base.shape
+END
+foodprep-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/foodprep-season.shape
+END
+hotwater-base.shape
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hotwater-base.shape
+END
+HOT-control.shape
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/HOT-control.shape
+END
+dryer-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/dryer-season.shape
+END
+hotwater-mcs.shape
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/hotwater-mcs.shape
+END
+foodprep.shape
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/foodprep.shape
+END
+lights-season.shape
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/test/shapes/lights-season.shape
+END

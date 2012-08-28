@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node
+END
+IEEE_37node.glm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node/IEEE_37node.glm
+END
+Compare37-LN.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node/Compare37-LN.txt
+END
+Compare37-LN-Pcnt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node/Compare37-LN-Pcnt.txt
+END
+Ieee37VnodeLN.mat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node/Ieee37VnodeLN.mat
+END
+volts17LN.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node/volts17LN.txt
+END
+IEEE37-Dec17.glm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node/IEEE37-Dec17.glm
+END
+IEEE_37node-No_Regulator.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/powerflow/tests/37node/IEEE_37node-No_Regulator.glm
+END

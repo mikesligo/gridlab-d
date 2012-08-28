@@ -624,20 +624,19 @@ STATUS exec_start(void)
 
             sync.hard_event = (global_stoptime == TS_NEVER ? 0 : 1);
 
-#ifdef WIN32
+#ifndef WIN32
             /* Pause while the realtime is at -1 */
             while (global_run_realtime == -1){
-                Sleep(100);
+                usleep(100);
             }
 #else
             while (global_run_realtime == -1){
-                usleep(100);
+                Sleep(100);
             }
 #endif
             /* realtime support */
             if (global_run_realtime>0)
             {
-                printf("Global_run_realtime is %d\n",global_run_realtime);
 #ifdef WIN32
                 struct timeb tv;
                 ftime(&tv);

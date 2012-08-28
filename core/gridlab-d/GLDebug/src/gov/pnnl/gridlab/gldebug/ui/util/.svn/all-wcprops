@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util
+END
+LoadRecentProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util/LoadRecentProject.java
+END
+StyledJTextPane.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util/StyledJTextPane.java
+END
+FileLocationPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util/FileLocationPanel.java
+END
+RecentFileManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util/RecentFileManager.java
+END
+FileChooserEx.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util/FileChooserEx.java
+END
+UserPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util/UserPreferences.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/util/Utils.java
+END

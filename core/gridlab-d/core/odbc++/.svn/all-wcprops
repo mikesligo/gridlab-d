@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++
+END
+drivermanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/drivermanager.h
+END
+preparedstatement.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/preparedstatement.h
+END
+errorhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/errorhandler.h
+END
+resultset.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/resultset.h
+END
+threads.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/threads.h
+END
+resultsetmetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/resultsetmetadata.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/Makefile.in
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/LICENSE
+END
+STATUS
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/STATUS
+END
+connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/connection.h
+END
+setup.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/setup.h
+END
+statement.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/statement.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/types.h
+END
+databasemetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/databasemetadata.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/config.h
+END
+config-win32.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/config-win32.h
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/config.h.in
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/COPYRIGHT
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/Makefile.am
+END
+callablestatement.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/core/odbc++/callablestatement.h
+END

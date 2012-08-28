@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_memory
+END
+EXPERIMENTAL
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_memory/EXPERIMENTAL
+END
+tape_memory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_memory/tape_memory.cpp
+END
+tape_memory.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_memory/tape_memory.vcproj
+END
+tape_memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/tape_memory/tape_memory.h
+END

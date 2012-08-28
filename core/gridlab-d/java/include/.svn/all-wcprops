@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/java/include
+END
+jni.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/java/include/jni.h
+END
+classfile_constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/java/include/classfile_constants.h
+END
+jdwpTransport.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/java/include/jdwpTransport.h
+END
+jawt.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/java/include/jawt.h
+END
+jvmti.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/java/include/jvmti.h
+END

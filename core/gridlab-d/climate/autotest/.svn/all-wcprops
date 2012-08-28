@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2662/branch/2.2/climate/autotest
+END
+WA-Yakima.glm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/autotest/WA-Yakima.glm
+END
+test_solar_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/gridlab-d/!svn/ver/2662/branch/2.2/climate/autotest/test_solar_opt.glm
+END
+test_csvreader_exercise_5_1_2.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2560/branch/2.2/climate/autotest/test_csvreader_exercise_5_1_2.glm
+END
+weather.csv
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/autotest/weather.csv
+END
+WA-Yakima.tmy2
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/climate/autotest/WA-Yakima.tmy2
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/footer.html
+END
+user_manual.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/user_manual.h
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/LICENSE
+END
+doxygen-doc.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/doxygen-doc.vcproj
+END
+STATUS
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/STATUS
+END
+build.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/build.bat
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/COPYRIGHT
+END
+gridlabd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/doxygen/gridlabd.conf
+END

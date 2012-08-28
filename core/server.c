@@ -630,7 +630,30 @@ http_set_realtime(HTTP *http, char *uri)
 
     set_global_run_realtime(atoi(value));
     http_format(http,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
-    http_format(http,"\t<realtime>%s</realtime>\n", value);
+    http_format(http,"<realtime>\n");
+    http_format(http,"\t<value>%s</value>\n", value);
+    http_format(http,"</realtime>\n");
+    http_type(http,"text/xml");
+}
+
+void http_get_realtime(HTTP * http)
+{
+    char buffer[1024];
+    sprintf(buffer,"%d",get_global_run_realtime());
+    http_format(http,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
+    http_format(http,"<realtime>\n");
+    http_format(http,"\t<value>%s</value>\n", buffer);
+    http_format(http,"</realtime>\n");
+    http_type(http,"text/xml");
+}
+
+void http_get_simtime(HTTP * http)
+{
+    char * current_time = get_global_clock_string();
+    http_format(http,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
+    http_format(http,"<simtime>\n");
+    http_format(http,"\t<value>%s</value>\n", current_time);
+    http_format(http,"</simtime>\n");
     http_type(http,"text/xml");
 }
 
@@ -744,9 +767,21 @@ void http_response(SOCKET fd)
             http_list_request(http);
             http_send(http);
         }
-        else if ( strncmp(uri,"/realtime",9)==0 )
+        else if ( strncmp(uri,"/realtime=",10)==0 )
         {
             http_set_realtime(http, uri+1);
+            http_send(http);
+        }
+        else if ( strcmp(uri,"/realtime")==0 )
+        {
+            http_get_realtime(http);
+            http_status(http,HTTP_OK);
+            http_send(http);
+        }
+        else if ( strcmp(uri,"/simtime")==0 )
+        {
+            http_get_simtime(http);
+            http_status(http,HTTP_OK);
             http_send(http);
         }
         else if (strncmp(uri,"/",1)==0 )

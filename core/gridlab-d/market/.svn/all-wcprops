@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gridlab-d/!svn/ver/2742/branch/2.2/market
+END
+bid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gridlab-d/!svn/ver/2136/branch/2.2/market/bid.cpp
+END
+generator_controller.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gridlab-d/!svn/ver/2666/branch/2.2/market/generator_controller.h
+END
+stubauction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/stubauction.cpp
+END
+auction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2138/branch/2.2/market/auction.cpp
+END
+bid.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/bid.h
+END
+init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gridlab-d/!svn/ver/2184/branch/2.2/market/init.cpp
+END
+market.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2503/branch/2.2/market/market.vcproj
+END
+controller2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/controller2.cpp
+END
+stubauction.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/stubauction.h
+END
+auction.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2136/branch/2.2/market/auction.h
+END
+controller2.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/controller2.h
+END
+test_market_passive_controller_RAMP_mode_matching_period.glm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2503/branch/2.2/market/test_market_passive_controller_RAMP_mode_matching_period.glm
+END
+EXPERIMENTAL
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/EXPERIMENTAL
+END
+double_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/gridlab-d/!svn/ver/2366/branch/2.2/market/double_controller.cpp
+END
+passive_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gridlab-d/!svn/ver/2742/branch/2.2/market/passive_controller.cpp
+END
+double_controller.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gridlab-d/!svn/ver/2366/branch/2.2/market/double_controller.h
+END
+passive_controller.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gridlab-d/!svn/ver/2742/branch/2.2/market/passive_controller.h
+END
+controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2425/branch/2.2/market/controller.cpp
+END
+curve.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gridlab-d/!svn/ver/2669/branch/2.2/market/curve.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/main.cpp
+END
+stub_bidder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gridlab-d/!svn/ver/2366/branch/2.2/market/stub_bidder.cpp
+END
+test_market_passive_controller_RAMP_mode_nonmatching_period.glm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/gridlab-d/!svn/ver/2503/branch/2.2/market/test_market_passive_controller_RAMP_mode_nonmatching_period.glm
+END
+controller.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2366/branch/2.2/market/controller.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2184/branch/2.2/market/Makefile.am
+END
+market.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/market.h
+END
+generator_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gridlab-d/!svn/ver/2666/branch/2.2/market/generator_controller.cpp
+END
+curve.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/curve.h
+END
+stub_bidder.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2366/branch/2.2/market/stub_bidder.h
+END

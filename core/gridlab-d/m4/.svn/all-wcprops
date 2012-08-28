@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4
+END
+gld_builtins.m4
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/gld_builtins.m4
+END
+gcc_ct_features.m4
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/gcc_ct_features.m4
+END
+acx_pthread.m4
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/acx_pthread.m4
+END
+cppunit.m4
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/cppunit.m4
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/LICENSE
+END
+STATUS
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/STATUS
+END
+ax_lib_xerces.m4
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/ax_lib_xerces.m4
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/COPYRIGHT
+END
+gld_get_nprocs.m4
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/gld_get_nprocs.m4
+END
+ax_prog_doxygen.m4
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/ax_prog_doxygen.m4
+END
+ax_lib_superlu.m4
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/m4/ax_lib_superlu.m4
+END

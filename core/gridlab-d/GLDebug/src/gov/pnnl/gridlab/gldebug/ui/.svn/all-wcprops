@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui
+END
+SplashScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/SplashScreen.java
+END
+GlobalsTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/GlobalsTable.java
+END
+DetailsTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/DetailsTable.java
+END
+GLIcons.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/GLIcons.java
+END
+ProjectSettingsDlg.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/ProjectSettingsDlg.java
+END
+MainFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/MainFrame.java
+END
+GLDebugFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/GLDebugFrame.java
+END
+ProjectHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/ProjectHandler.java
+END
+SettingsDlg.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/GLDebug/src/gov/pnnl/gridlab/gldebug/ui/SettingsDlg.java
+END

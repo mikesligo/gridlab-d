@@ -1,0 +1,521 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gridlab-d/!svn/ver/2658/branch/2.2/market/autotest
+END
+negative_quantity_bids.player
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/negative_quantity_bids.player
+END
+test_Zip_Load_Elasticity_Model_Critical_Three_Tier_Price.glm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/gridlab-d/!svn/ver/2653/branch/2.2/market/autotest/test_Zip_Load_Elasticity_Model_Critical_Three_Tier_Price.glm
+END
+test_Zip_Load_Elasticity_Model_Critical_Two_Tier_Price.glm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/gridlab-d/!svn/ver/2653/branch/2.2/market/autotest/test_Zip_Load_Elasticity_Model_Critical_Two_Tier_Price.glm
+END
+test_markets_auction_null_market.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_null_market.glm
+END
+Price_Static.player
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/Price_Static.player
+END
+Elasticity_Multiplier_Three_Tier_Price.player
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/gridlab-d/!svn/ver/2658/branch/2.2/market/autotest/Elasticity_Multiplier_Three_Tier_Price.player
+END
+test_markets_auction_negative_price_bids.glm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_price_bids.glm
+END
+test_markets_auction_large_unbalanced_no_buyers_null.glm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_no_buyers_null.glm
+END
+test_markets_auction_simultaneous.glm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_simultaneous.glm
+END
+test_markets_controller_cooling_deadband_matching_period.glm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_cooling_deadband_matching_period.glm
+END
+test_markets_auction_negative_buyer_price.glm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_buyer_price.glm
+END
+test_markets_auction_large_unbalanced_exact.glm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_exact.glm
+END
+test_markets_auction_seller_rebid.glm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_seller_rebid.glm
+END
+negative_price_bids.player
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/negative_price_bids.player
+END
+test_markets_stubauction_opt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_markets_stubauction_opt.glm
+END
+test_markets_auction_large_unbalanced_null.glm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_null.glm
+END
+test_markets_auction_negative_quantity_bids.glm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_quantity_bids.glm
+END
+test_market_auction_advanced_1.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_advanced_1.glm
+END
+test_markets_auction_no_buyers.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_no_buyers.glm
+END
+test_opt_markets_auction_large_balanced_marginal_seller.glm
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/gridlab-d/!svn/ver/2541/branch/2.2/market/autotest/test_opt_markets_auction_large_balanced_marginal_seller.glm
+END
+Price_Changing.player
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/Price_Changing.player
+END
+test_markets_controller_heating_inelastic_matching_period.glm
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_heating_inelastic_matching_period.glm
+END
+test_skew_DST_fall.glm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_skew_DST_fall.glm
+END
+TOU_Pricing_2Tier_OnlyCritical.player
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/gridlab-d/!svn/ver/2520/branch/2.2/market/autotest/TOU_Pricing_2Tier_OnlyCritical.player
+END
+test_markets_controller_heating_deadband_matching_period.glm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_heating_deadband_matching_period.glm
+END
+test_market_quantity_conversion.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_market_quantity_conversion.glm
+END
+test_markets_controller_cooling_inelastic_nonmatching_periods.glm
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_cooling_inelastic_nonmatching_periods.glm
+END
+test_market_auction_clearing_3.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_clearing_3.glm
+END
+WA-Yakima.tmy2
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/WA-Yakima.tmy2
+END
+test_markets_auction_large_unbalanced_no_sellers_null.glm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_no_sellers_null.glm
+END
+test_market_exercise_4_4_1.glm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_exercise_4_4_1.glm
+END
+TOU_Pricing.player
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/gridlab-d/!svn/ver/2317/branch/2.2/market/autotest/TOU_Pricing.player
+END
+test_markets_auction_negative_seller_price.glm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_seller_price.glm
+END
+test_markets_auction_buyer_rebid.glm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_buyer_rebid.glm
+END
+test_markets_auction_buyer_seller_alt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_buyer_seller_alt.glm
+END
+test_dutycycle_CPP.glm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2350/branch/2.2/market/autotest/test_dutycycle_CPP.glm
+END
+lastP_static.player
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/lastP_static.player
+END
+test_markets_controller_cooling_inelastic_double.glm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_cooling_inelastic_double.glm
+END
+test_Zip_Load_Elasticity_Model_NonCritical_With_Two_TierCPP.glm
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/gridlab-d/!svn/ver/2658/branch/2.2/market/autotest/test_Zip_Load_Elasticity_Model_NonCritical_With_Two_TierCPP.glm
+END
+test_market_auction_clearing_6_morebuyers.glm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_clearing_6_morebuyers.glm
+END
+test_market_auction_clearing_6_moresellers.glm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_clearing_6_moresellers.glm
+END
+Elasticity_Multiplier_Critical_With_Two_TierCPP.player
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/gridlab-d/!svn/ver/2658/branch/2.2/market/autotest/Elasticity_Multiplier_Critical_With_Two_TierCPP.player
+END
+test_markets_auction_sellers_first.glm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_sellers_first.glm
+END
+test_unitless_bid_quantity_err.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_unitless_bid_quantity_err.glm
+END
+test_markets_auction_negative_buyer_and_seller_price.glm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_buyer_and_seller_price.glm
+END
+test_markets_controller_heating_inelastic_nonmatching_period.glm
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_heating_inelastic_nonmatching_period.glm
+END
+appliance_schedules.glm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/gridlab-d/!svn/ver/2330/branch/2.2/market/autotest/appliance_schedules.glm
+END
+Elasticity_Multiplier_Two_Tier_Price.player
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/gridlab-d/!svn/ver/2522/branch/2.2/market/autotest/Elasticity_Multiplier_Two_Tier_Price.player
+END
+test_market_auction_timing_1.glm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_timing_1.glm
+END
+test_market_auction_timing_2.glm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_timing_2.glm
+END
+test_markets_controller_heating_inelastic_double.glm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_heating_inelastic_double.glm
+END
+test_markets_auction_large_unbalanced_marginal_seller.glm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_marginal_seller.glm
+END
+test_markets_auction_large_balanced_exact.glm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_balanced_exact.glm
+END
+test_market_auction_timing_4.glm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_timing_4.glm
+END
+test_market_auction_timing_5.glm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_market_auction_timing_5.glm
+END
+test_stubauction.glm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_stubauction.glm
+END
+test_markets_auction_repeated_bids.glm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_repeated_bids.glm
+END
+TOU_Pricing_3Tier.player
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/gridlab-d/!svn/ver/2520/branch/2.2/market/autotest/TOU_Pricing_3Tier.player
+END
+test_markets_auction_negative_all_quantities.glm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_all_quantities.glm
+END
+test_opt_markets_auction_large_balanced_marginal_buyer.glm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/gridlab-d/!svn/ver/2541/branch/2.2/market/autotest/test_opt_markets_auction_large_balanced_marginal_buyer.glm
+END
+test_markets_auction_negative_buyer_quantity.glm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_buyer_quantity.glm
+END
+test_markets_auction_large_unbalanced_bid_resubmissions.glm
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_bid_resubmissions.glm
+END
+ColumbusWeather2009_Correct.csv
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/gridlab-d/!svn/ver/2316/branch/2.2/market/autotest/ColumbusWeather2009_Correct.csv
+END
+test_markets_auction_large_unbalanced_failure.glm
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_failure.glm
+END
+test_markets_auction_unresponsive_buyer_failure.glm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_unresponsive_buyer_failure.glm
+END
+test_skew_year_transitions.glm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_skew_year_transitions.glm
+END
+dutycycle_TOU_player.player
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/gridlab-d/!svn/ver/2333/branch/2.2/market/autotest/dutycycle_TOU_player.player
+END
+test_markets_auction_buyers_first.glm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_buyers_first.glm
+END
+test_opt_markets_auction_large_balanced_marginal_price.glm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/gridlab-d/!svn/ver/2541/branch/2.2/market/autotest/test_opt_markets_auction_large_balanced_marginal_price.glm
+END
+test_markets_controller_cooling_inelastic_matching_period.glm
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_controller_cooling_inelastic_matching_period.glm
+END
+Elasticity_Multiplier_NonCritical_With_Three_TierCPP.player
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/gridlab-d/!svn/ver/2658/branch/2.2/market/autotest/Elasticity_Multiplier_NonCritical_With_Three_TierCPP.player
+END
+test_dutycycle_TOU.glm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/gridlab-d/!svn/ver/2350/branch/2.2/market/autotest/test_dutycycle_TOU.glm
+END
+Elasticity_Multiplier_NonCritical_With_Two_TierCPP.player
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/gridlab-d/!svn/ver/2658/branch/2.2/market/autotest/Elasticity_Multiplier_NonCritical_With_Two_TierCPP.player
+END
+test_markets_auction_large_unbalanced_marginal_buyer.glm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_marginal_buyer.glm
+END
+test_markets_auction_cases_4_and_5.glm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_cases_4_and_5.glm
+END
+dutycycle_CPP_player.player
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/gridlab-d/!svn/ver/2333/branch/2.2/market/autotest/dutycycle_CPP_player.player
+END
+test_markets_auction_seller_buyer_alt.glm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_seller_buyer_alt.glm
+END
+TOU_Pricing_2Tier_OnlyCritical.glm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/gridlab-d/!svn/ver/2575/branch/2.2/market/autotest/TOU_Pricing_2Tier_OnlyCritical.glm
+END
+test_skew_DST_spring.glm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_skew_DST_spring.glm
+END
+TOU_Pricing_2Tier_OnlyHigh.player
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/gridlab-d/!svn/ver/2520/branch/2.2/market/autotest/TOU_Pricing_2Tier_OnlyHigh.player
+END
+test_Zip_Load_Elasticity_Model_NonCritical_With_Three_TierCPP.glm
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/gridlab-d/!svn/ver/2657/branch/2.2/market/autotest/test_Zip_Load_Elasticity_Model_NonCritical_With_Three_TierCPP.glm
+END
+repeated_bids.player
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/repeated_bids.player
+END
+test_markets_auction_large_unbalanced_marginal_price.glm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_large_unbalanced_marginal_price.glm
+END
+test_markets_auction_no_sellers.glm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_no_sellers.glm
+END
+test_skew_leap_years.glm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/gridlab-d/!svn/ver/2043/branch/2.2/market/autotest/test_skew_leap_years.glm
+END
+test_markets_auction_negative_seller_quantity.glm
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/gridlab-d/!svn/ver/2502/branch/2.2/market/autotest/test_markets_auction_negative_seller_quantity.glm
+END
