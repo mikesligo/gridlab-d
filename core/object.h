@@ -68,6 +68,15 @@ typedef struct s_object_list {
 	/* IMPORTANT: flags must be last */
 } OBJECT; /**< Object header structure */
 
+
+typedef struct s_objecttree {
+	char name[64];
+	OBJECT *obj;
+	struct s_objecttree *before, *after;
+	int balance; /* unused */
+} OBJECTTREE;
+
+
 /* this is the callback table for modules
  * the table is initialized in module.cpp
  */

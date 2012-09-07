@@ -1644,14 +1644,12 @@ double convert_to_longitude(char *buffer){
  OBJECT NAME TREE
  ***************************************************************************/
 
-typedef struct s_objecttree {
-	char name[64];
-	OBJECT *obj;
-	struct s_objecttree *before, *after;
-	int balance; /* unused */
-} OBJECTTREE;
 
 static OBJECTTREE *top=NULL;
+
+OBJECTTREE * getTop(){
+    return top;
+}
 
 void debug_traverse_tree(OBJECTTREE *tree){
 	if(tree == NULL){
@@ -1878,46 +1876,6 @@ void object_tree_delete(OBJECT *obj, OBJECTNAME name)
     }
 }
 
-/*
- * The following 3 functions (and struct STRING_LIST in the header file) work to create a linked list containing the names, parents and types of all the objects registered to gridlab-d
- */
-
-/*
- * Add types to the linked list
- */
-void add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_type, char * add_parent){
-    STRING_LIST *temp = list;
-    while (temp->next != NULL) temp = temp->next;
-    temp->name = add_name;
-    temp->module_type = add_module_type;
-    temp->parent_name = add_parent;
-    temp->next = malloc(sizeof(STRING_LIST));
-    temp->next->next = NULL;
-}
-
-/*
- * Recursive function to go through the tree OBJECTTREE and compile the STRING_LIST list
- */
-STRING_LIST *compile_string_list(OBJECTTREE *tree, STRING_LIST *list){
-    if(tree == NULL){
-        return;
-    } 
-    if (tree->obj->parent != NULL) add_to_name_list(list,tree->name,tree->obj->oclass->name, tree->obj->parent->name);
-    else add_to_name_list(list,tree->name,tree->obj->oclass->name, 0);
-    compile_string_list(tree->before, list);
-    compile_string_list(tree->after, list);
-    return list;
-}
-
-/*
- * Creates a new STRING_LIST and calls on recursive function compile_string_list. It returns the string list to be used in server.c
- */
-STRING_LIST *get_module_types(){
-    STRING_LIST * strings = malloc(sizeof(STRING_LIST));
-    strings->next = NULL;
-    compile_string_list(top, strings);
-    return strings;
-}
 
 /** Find an object from a name.  This only works for named objects.  See object_set_name().
   @return a pointer to the OBJECT structure
@@ -1926,7 +1884,6 @@ OBJECT *object_find_name(OBJECTNAME name){
     OBJECTTREE **item = NULL;
 
     item = findin_tree(top, name);
-    get_module_types();
 
     if(item != NULL && *item != NULL){
         return (*item)->obj;
@@ -1968,6 +1925,8 @@ int object_build_name(OBJECT *obj, char *buffer, int len){
     output_error("object_build_name(): control unexpectedly reached end of method");
     return 0; // shouldn't reach this
 }
+
+
 
 /** Sets the name of an object.  This is useful if the internal name cannot be relied upon, 
   as when multiple modules are being used.

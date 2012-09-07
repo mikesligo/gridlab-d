@@ -412,7 +412,7 @@ uninstall-am: uninstall-local
 
 install-data-hook:
 	mkdir -p $(DESTDIR)$(pkglibdir)
-	cd $(DESTDIR)$(pkglibdir) && for f in ??.zip; do unzip -fqq $$f; done
+#	cd $(DESTDIR)$(pkglibdir) && for f in ??.zip; do unzip -fqq $$f; done
 
 uninstall-local:
 	-cd $(DESTDIR)$(pkglibdir) && rm ??-*.glm ??-*.tmy2

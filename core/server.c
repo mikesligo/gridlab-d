@@ -409,6 +409,7 @@ int http_xml_request(HTTP *http,char *uri)
 
         /* get global variable */
         case 1: 
+
             /* find the variable */
             if (global_getvar(arg1,buffer,sizeof(buffer))==NULL)
             {
@@ -590,19 +591,62 @@ int http_favicon(http)
     fclose(fp); return 0;
 }
 
+/*
+ * The following 3 functions (and struct STRING_LIST in the header file) work to create a linked list containing the names, parents and types of all the objects registered to gridlab-d
+ */
+
+/*
+ * Add types to the linked list
+ */
+int add_to_name_list(STRING_LIST *list, char * add_name, char * add_module_type, char * add_parent){
+    STRING_LIST *temp = list;
+    if (list == NULL) return 11;
+    while (temp->next != NULL) temp = temp->next;
+    temp->next = malloc(sizeof(STRING_LIST));
+    temp->next->next = NULL;
+
+    temp->name = add_name;
+    temp->module_type = add_module_type;
+    temp->parent_name = add_parent;
+}
+
+/*
+ * Recursive function to go through the tree OBJECTTREE and compile the STRING_LIST list
+ */
+STRING_LIST *compile_string_list(OBJECTTREE *tree, STRING_LIST *list){
+    if(tree == NULL){
+        return;
+    } 
+    if (tree->obj->parent != NULL) add_to_name_list(list,tree->name,tree->obj->oclass->name, tree->obj->parent->name);
+    else add_to_name_list(list,tree->name,tree->obj->oclass->name, 0);
+    compile_string_list(tree->before, list);
+    compile_string_list(tree->after, list);
+    return list;
+}
+
+/*
+ * Creates a new STRING_LIST and calls on recursive function compile_string_list. It returns the string list to be used in server.c
+ */
+STRING_LIST *get_module_types(){
+    STRING_LIST * strings = malloc(sizeof(STRING_LIST));
+    strings->next = NULL;
+    compile_string_list(getTop(), strings);
+    return strings;
+}
+
 int http_list_request(HTTP *http)
 {
-    STRING_LIST * list;
-    list = get_module_types();
+    STRING_LIST * list = get_module_types();
+    printf("%s\n",list->name);
     http_format(http,"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
     http_format(http,"<list>\n");
-    while (list->next != NULL){
+    while (list != NULL){
         http_format(http,"\t<modules>\n");
         http_format(http,"\t\t<name>%s</name>\n", list->name);
         http_format(http,"\t\t<type>%s</type>\n", list->module_type);
         http_format(http,"\t\t<parent>%s</parent>\n", list->parent_name);
-        list = list->next;
         http_format(http,"\t</modules>\n");
+        list = list->next;
     }
     http_format(http,"</list>\n");
     http_type(http,"text/xml");
